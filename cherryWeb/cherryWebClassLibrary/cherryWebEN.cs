@@ -112,6 +112,33 @@ namespace cherryWebClassLibrary
         private float _PVP;
         private String imagen;
 
+        //Datos
+
+        //private AplicacionCAD m_cc;
+
+        public ENAplicaciones(string n = "", string d ="", string i="", float p=0, float pv = 0)
+        {
+            nombre = n;
+            descripcion = d;
+            imagen = i;
+            peso = p;
+            pv = _PVP;
+        }
+
+        /*public void nueva_aplicacion()
+        {
+            try
+            {
+                m_cc = new AplicacionCAD("../webdb");
+            }
+            catch (Error e)
+            {
+                Console.WriteLine("Error añadiendo aplicación");
+
+                return;
+            }
+        }*/
+
         public String Nombre
         {
             get { return nombre; }
@@ -147,6 +174,15 @@ namespace cherryWebClassLibrary
         private DateTime fecha_hora;
         private String mensaje;
 
+        public ENMensaje(DateTime d, int i=0, string a1="", string a2="", string m="")
+        {
+            _ID = i;
+            apodo_1 = a1;
+            apodo_2 = a2;
+            fecha_hora = d;
+            mensaje = m;
+        }
+
         private int ID
         {
             get { return _ID; }
@@ -180,6 +216,13 @@ namespace cherryWebClassLibrary
         private String apodo;
         private String nombre;
 
+        public ENValoracionesUsuario(int v = 0, string a = "", string n = "")
+        {
+            valoracion = v;
+            apodo = a;
+            nombre = n;
+        }
+
         private int Valoracion
         {
             get { return valoracion; }
@@ -203,6 +246,12 @@ namespace cherryWebClassLibrary
         private String usuario;
         private String redSocial;
 
+        public ENRedesSociales(string u = "", string rs = "")
+        {
+            usuario = u;
+            redSocial = rs;
+        }
+
         private String Usuario
         {
             get { return usuario; }
@@ -220,6 +269,12 @@ namespace cherryWebClassLibrary
         private int numerototal;
         private String aplicacion;
 
+        public ENDescargas(int nt=0, string a="")
+        {
+            numerototal = nt;
+            aplicacion = a;
+        }
+
         private int Numerototal
         {
             get { return numerototal; }
@@ -236,6 +291,12 @@ namespace cherryWebClassLibrary
     {
         private float media;
         private string aplicacion;
+
+        public ENMediaAplicaciones(float m = 0, string a = "")
+        {
+            media = m;
+            aplicacion = a;
+        }
 
         private float Media
         {
