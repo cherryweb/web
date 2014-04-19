@@ -127,6 +127,28 @@ namespace cherryWebClassLibrary
         }
     }
 
+    public class ENValoracionesUsuario
+    {
+        private int valoracion;
+        private String apodo;
+        private String nombre;
+    }
+    public class ENRedesSociales
+    {
+        private String usuario;
+        private String redSocial;
+    }
+    private class ENDescargas
+    {
+        private int numerototal;
+        private String aplicacion;
+    }
+    public class ENMediaAplicaciones
+    {
+        private float media;
+        private string aplicacion;
+    }
+
 }
 
 
