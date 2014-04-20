@@ -172,7 +172,7 @@ namespace cherryWebClassLibrary
 
         }
 
-        public float CalculoMediaAplicacion(int numVotosEmitidos, int totalValoracion)
+        public float CalculoMediaAplicacion(string aplicacion)
         {
             float media=0;
             return media;
