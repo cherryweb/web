@@ -5,9 +5,9 @@ using System.Text;
 
 namespace cherryWebClassLibrary
 {
+
     public class ENUsuario
     {
-
         //Propiedades
         private String apodo;
         private String nombre;
@@ -20,7 +20,7 @@ namespace cherryWebClassLibrary
         private String paypal;
 
         //Datos
-        //private UsuarioCAD m_cc;
+        private UsuarioCAD m_cc;
 
         public ENUsuario(string a = "", string n = "", string p = "", string er = "", string ec = "", string ps = "", Boolean b, string i = "", string paypal="")
         {
@@ -35,7 +35,7 @@ namespace cherryWebClassLibrary
             p = paypal;
         }
 
-        /*public void nuevo_usuario()
+       /* public void nuevo_usuario()
         {
             try
             {
@@ -214,13 +214,13 @@ namespace cherryWebClassLibrary
     {
         private int valoracion;
         private String apodo;
-        private String nombre;
+        private String aplicacion;
 
         public ENValoracionesUsuario(int v = 0, string a = "", string n = "")
         {
             valoracion = v;
             apodo = a;
-            nombre = n;
+            aplicacion = n;
         }
 
         private int Valoracion
@@ -235,10 +235,10 @@ namespace cherryWebClassLibrary
             set { apodo = value; }
         }
 
-        private String Nombre
+        private String Aplicacion
         {
-            get { return nombre; }
-            set { nombre = value; }
+            get { return aplicacion; }
+            set { aplicacion = value; }
         }
     }
     public class ENRedesSociales
