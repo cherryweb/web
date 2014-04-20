@@ -102,6 +102,11 @@ namespace cherryWebClassLibrary
             get { return boletin; }
             set { boletin = value; }
         }
+        public string Foto
+        {
+            get { return Foto; }
+            set { Foto = value; }
+        }
     }
 
     public class ENAplicaciones

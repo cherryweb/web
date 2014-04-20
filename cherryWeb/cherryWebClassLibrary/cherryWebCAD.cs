@@ -3,25 +3,74 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Exception;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace cherryWebClassLibrary
 {
     public class UsuarioCAD
     {
+        /*La cadena de conexion puede ser de dos maneras. Una de forma local y otra si esta en
+         un servidor
+         -  cadenaconexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\basededatos.accdb" este 
+         * caso es para una bbdd en access
+         - Server sql 2008 cadenaconexion =  "Data Source='RAUL-PC\\SQLEXPRESS';Initial                             Catalog=basededatos;Integrated Security=True";
+         Hay otro tercer caso que creo que es que la propia aplicacion tenga su propia bbdd con 
+         linq o algo así*/
 
+        string cadenaconexion="_";
+        SqlConnection conexion = new SqlConnection(cadenaconexion);//crear conexion esto es la misma            siempre para todos
+         
         public UsuarioCAD () 
         {
+            //NI IDEA QUE HACE ESTO!?
             //Adquiere la cadena de conexión desde un único sitio.
         }
 
         public ENUsuario dameUsuario(string apodo)
         {
             // Código para recuperar un tipo DataSet conteniendo los datos del Cliente
+
+            SqlCommand consulta = new SqlCommand("SELECT * FROM USUARIOS WHERE APODO="+apodo, conexion);
+            SqlDataAdapter adapter = new SqlDataAdapter(consulta);//obtiene los datos
+            SqlDataReader dr;
+
+            conexion.Open();
+
+            dr = consulta.ExecuteReader();
+
+            ENUsuario aux = new ENUsuario();
+
+            aux.Nombre = dr["Nombre"].ToString();
+            aux.Apodo = dr["Apodo"].ToString();
+            aux.Boletin = (bool)dr["Boletin"];
+            aux.Email_contacto = dr["Email_contacto"].ToString();
+            aux.Email_registro = dr["Email-registro"].ToString();
+            aux.Foto= dr["Foto"].ToString();
+            aux.Password= dr["Contraseña"].ToString();
+            aux.Pais= dr["Pais"].ToString();
+
+            conexion.Close();
+
+            return aux;
+
         }
 
         public void nuevo_usuario(ENUsuario usuario)
         {
-            //Código para crear un nuevo usuario
+            string s = "INSERT INTO USUARIOS(APODO, NOMBRE, CONTRASEÑA, EMAIL_REGISTRO, EMAIL_CONTACTO, PAIS, BOLETIN, FOTO_PERFIL) Values(@apod, @nomb, @pass, @email_reg, @email_contc, @country, @bolet, @foto_per)";
+            SqlCommand cm = new SqlCommand(s,conexion);
+            cm.Parameters.AddWithValue("apod", usuario.Apodo);
+            cm.Parameters.AddWithValue("nomb", usuario.Nombre);
+            cm.Parameters.AddWithValue("pass",usuario.Password);
+            cm.Parameters.AddWithValue("email_reg", usuario.Email_registro);
+            cm.Parameters.AddWithValue("email_contc", usuario.Email_contacto);
+            cm.Parameters.AddWithValue("country", usuario.Pais);
+            cm.Parameters.AddWithValue("bolet", usuario.Boletin);
+            cm.Parameters.AddWithValue("foto_per", usuario.Foto);
+            conexion.Open();
+            cm.ExecuteNonQuery();
+            conexion.Close();
         }
 
         public void borrar_usuario(string apodo)
