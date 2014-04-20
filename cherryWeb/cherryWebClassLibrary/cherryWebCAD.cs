@@ -151,7 +151,7 @@ namespace cherryWebClassLibrary
 
     public class ValoracionesUsuarioCAD
     {
-        public ValoracionesUsuarioCAD()
+        public ValoracionesUsuarioCAD(string db)
         {
             //Adquiere la cadena de conexión desde un único sitio.
         }

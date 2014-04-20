@@ -41,7 +41,7 @@ namespace cherryWebClassLibrary
             {
                 m_cc = new UsuarioCAD("../webdb");
             }
-            catch (Error e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error creando usuario");
 
@@ -55,7 +55,7 @@ namespace cherryWebClassLibrary
             {
                 m_cc = new UsuarioCAD("../webdb");
             }
-            catch (Error e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error borrando usuario");
 
@@ -135,7 +135,7 @@ namespace cherryWebClassLibrary
             {
                 m_cc = new AplicacionCAD("../webdb");
             }
-            catch (Error e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error creando usuario");
 
@@ -149,7 +149,7 @@ namespace cherryWebClassLibrary
             {
                 m_cc = new AplicacionCAD("../webdb");
             }
-            catch (Error e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error borrando usuario");
 
@@ -211,7 +211,7 @@ namespace cherryWebClassLibrary
             {
                 m_cc = new MensajeCAD("../webdb");
             }
-            catch (Error e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error creando usuario");
 
@@ -225,7 +225,7 @@ namespace cherryWebClassLibrary
             {
                 m_cc = new MensajeCAD("../webdb");
             }
-            catch (Error e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error borrando usuario");
 
@@ -283,7 +283,7 @@ namespace cherryWebClassLibrary
             {
                 m_cc = new ValoracionesUsuarioCAD("../webdb");
             }
-            catch (Error e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error creando usuario");
 
@@ -330,7 +330,7 @@ namespace cherryWebClassLibrary
             {
                 m_cc = new RedesSocialesCAD("../webdb");
             }
-            catch (Error e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error creando usuario");
 
@@ -371,7 +371,7 @@ namespace cherryWebClassLibrary
             {
                 m_cc = new DescargasCAD("../webdb");
             }
-            catch (Error e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error creando usuario");
 
