@@ -166,6 +166,12 @@ namespace cherryWebClassLibrary
 
     public class MediaAplicacionesCAD
     {
+
+        public MediaAplicacionesCAD()
+        {
+
+        }
+
         public float CalculoMediaAplicacion(int numVotosEmitidos, int totalValoracion)
         {
             float media=0;
