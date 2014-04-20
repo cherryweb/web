@@ -9,20 +9,20 @@ namespace cherryWebClassLibrary
     public class ENUsuario
     {
         //Propiedades
-        private String apodo;
-        private String nombre;
-        private String password;
-        private String email_registro;
-        private String email_contacto;
-        private String pais;
-        private Boolean boletin;
-        private String imagen;
-        private String paypal;
+        private string apodo;
+        private string nombre;
+        private string password;
+        private string email_registro;
+        private string email_contacto;
+        private string pais;
+        private bool boletin;
+        private string imagen;
+        private string paypal;
 
         //Datos
         private UsuarioCAD m_cc;
 
-        public ENUsuario(string a = "", string n = "", string p = "", string er = "", string ec = "", string ps = "", Boolean b, string i = "", string paypal="")
+        public ENUsuario(string a = "", string n = "", string p = "", string er = "", string ec = "", string ps = "", bool b=false, string i = "", string paypal="")
         {
             apodo = a;
             nombre = n;
@@ -63,41 +63,41 @@ namespace cherryWebClassLibrary
             }
         }*/
 
-        public String Apodo
+        public string Apodo
         {
             get { return apodo;}
             set { apodo = value;}
         }
 
-        public String Nombre
+        public string Nombre
         {
             get { return nombre; }
             set { nombre = value; }
         }
 
-        public String Password
+        public string Password
         {
             get { return password; }
             set { password = value; }
 
         }
-        public String Email_registro
+        public string Email_registro
         {
             get { return email_registro; }
             set { email_registro = value; }
         }
 
-        public String Email_contacto
+        public string Email_contacto
         {
             get { return email_contacto; }
             set { email_contacto = value; }
         }
-        public String Pais
+        public string Pais
         {
             get { return pais; }
             set { pais = value; }
         }
-        public Boolean Boletin
+        public bool Boletin
         {
             get { return boletin; }
             set { boletin = value; }
@@ -106,11 +106,12 @@ namespace cherryWebClassLibrary
 
     public class ENAplicaciones
     {
-        private String nombre;
-        private String descripcion;
+        private string nombre;
+        private string descripcion;
         private float peso;
         private float _PVP;
-        private String imagen;
+        private string imagen;
+        
 
         //Datos
 
@@ -139,12 +140,12 @@ namespace cherryWebClassLibrary
             }
         }*/
 
-        public String Nombre
+        public string Nombre
         {
             get { return nombre; }
             set {nombre=value;}
         }
-        public String Descripcion
+        public string Descripcion
         {
             get { return descripcion; }
             set { descripcion = value; }
@@ -159,7 +160,7 @@ namespace cherryWebClassLibrary
             get { return _PVP; }
             set { _PVP = value; }
         }
-        private String Imagen
+        private string Imagen
         {
             get { return imagen; }
             set { imagen = value; }
@@ -169,10 +170,10 @@ namespace cherryWebClassLibrary
     public class ENMensaje
     {
         private int _ID;
-        private String apodo_1;
-        private String apodo_2;
+        private string apodo_1;
+        private string apodo_2;
         private DateTime fecha_hora;
-        private String mensaje;
+        private string mensaje;
 
         public ENMensaje(DateTime d, int i=0, string a1="", string a2="", string m="")
         {
@@ -188,12 +189,12 @@ namespace cherryWebClassLibrary
             get { return _ID; }
             set { _ID = value; }
         }
-        private String Apodo_1
+        private string Apodo_1
         {
             get { return apodo_1; }
             set { apodo_1 = value; }
         }
-        private String Apodo_2
+        private string Apodo_2
         {
             get { return apodo_2; }
             set { apodo_2 = value; }
@@ -203,7 +204,7 @@ namespace cherryWebClassLibrary
             get { return fecha_hora; }
             set { fecha_hora = value; }
         }
-        private String Mensaje
+        private string Mensaje
         {
             get { return mensaje; }
             set { mensaje = value; }
@@ -213,8 +214,8 @@ namespace cherryWebClassLibrary
     public class ENValoracionesUsuario
     {
         private int valoracion;
-        private String apodo;
-        private String aplicacion;
+        private string apodo;
+        private string aplicacion;
 
         public ENValoracionesUsuario(int v = 0, string a = "", string n = "")
         {
@@ -229,13 +230,13 @@ namespace cherryWebClassLibrary
             set { valoracion = value; }
         }
 
-        private String Apodo
+        private string Apodo
         {
             get { return apodo; }
             set { apodo = value; }
         }
 
-        private String Aplicacion
+        private string Aplicacion
         {
             get { return aplicacion; }
             set { aplicacion = value; }
@@ -243,8 +244,8 @@ namespace cherryWebClassLibrary
     }
     public class ENRedesSociales
     {
-        private String usuario;
-        private String redSocial;
+        private string usuario;
+        private string redSocial;
 
         public ENRedesSociales(string u = "", string rs = "")
         {
@@ -252,13 +253,13 @@ namespace cherryWebClassLibrary
             redSocial = rs;
         }
 
-        private String Usuario
+        private string Usuario
         {
             get { return usuario; }
             set { usuario = value; }
         }
 
-        private String RedSocial
+        private string RedSocial
         {
             get { return redSocial; }
             set { redSocial = value; }
@@ -267,7 +268,7 @@ namespace cherryWebClassLibrary
     private class ENDescargas
     {
         private int numerototal;
-        private String aplicacion;
+        private string aplicacion;
 
         public ENDescargas(int nt=0, string a="")
         {
@@ -281,7 +282,7 @@ namespace cherryWebClassLibrary
             set { numerototal = value; }
         }
 
-        private String Aplicacion
+        private string Aplicacion
         {
             get { return aplicacion; }
             set { aplicacion = value; }
@@ -304,7 +305,7 @@ namespace cherryWebClassLibrary
             set { media = value; }
         }
 
-        private String Aplicacion
+        private string Aplicacion
         {
             get { return aplicacion; }
             set { aplicacion = value; }

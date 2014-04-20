@@ -162,7 +162,14 @@ namespace cherryWebClassLibrary
 
             return numDescargas;
         }
+    }
 
-
+    public class MediaAplicacionesCAD
+    {
+        public float CalculoMediaAplicacion(int numVotosEmitidos, int totalValoracion)
+        {
+            float media=0;
+            return media;
+        }
     }
 }
