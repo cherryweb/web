@@ -21,9 +21,8 @@ namespace cherryWebClassLibrary
         string cadenaconexion="_";
         SqlConnection conexion = new SqlConnection(cadenaconexion);//crear conexion esto es la misma            siempre para todos
          
-        public UsuarioCAD () 
+        public UsuarioCAD (string db) 
         {
-            //NI IDEA QUE HACE ESTO!?
             //Adquiere la cadena de conexión desde un único sitio.
         }
 
@@ -86,7 +85,7 @@ namespace cherryWebClassLibrary
 
     public class AplicacionCAD
     {
-        public AplicacionCAD()
+        public AplicacionCAD(string db)
         {
             //Adquiere la cadena de conexión desde un único sitio.
         }
@@ -124,7 +123,7 @@ namespace cherryWebClassLibrary
 
     public class MensajeCAD
     {
-        public MensajeCAD()
+        public MensajeCAD(string db)
         {
             //Adquiere la cadena de conexión desde un único sitio.
         }
@@ -175,7 +174,7 @@ namespace cherryWebClassLibrary
 
     public class RedesSocialesCAD
     {
-        public RedesSocialesCAD()
+        public RedesSocialesCAD(string db)
         {
             //Adquiere la cadena de conexión desde un único sitio.
         }
@@ -193,7 +192,7 @@ namespace cherryWebClassLibrary
 
     public class DescargasCAD
     {
-        public DescargasCAD()
+        public DescargasCAD(string db)
         {
             //Adquiere la cadena de conexión desde un único sitio.
         }
@@ -216,7 +215,7 @@ namespace cherryWebClassLibrary
     public class MediaAplicacionesCAD
     {
 
-        public MediaAplicacionesCAD()
+        public MediaAplicacionesCAD(string db)
         {
 
         }

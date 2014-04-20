@@ -35,7 +35,7 @@ namespace cherryWebClassLibrary
             p = paypal;
         }
 
-       /* public void nuevo_usuario()
+        public void nuevo_usuario()
         {
             try
             {
@@ -61,7 +61,7 @@ namespace cherryWebClassLibrary
 
                 return;
             }
-        }*/
+        }
 
         public string Apodo
         {
@@ -117,10 +117,8 @@ namespace cherryWebClassLibrary
         private float _PVP;
         private string imagen;
         
-
         //Datos
-
-        //private AplicacionCAD m_cc;
+        private AplicacionCAD m_cc;
 
         public ENAplicaciones(string n = "", string d ="", string i="", float p=0, float pv = 0)
         {
@@ -131,7 +129,7 @@ namespace cherryWebClassLibrary
             pv = _PVP;
         }
 
-        /*public void nueva_aplicacion()
+        public void nueva_aplicacion()
         {
             try
             {
@@ -139,11 +137,25 @@ namespace cherryWebClassLibrary
             }
             catch (Error e)
             {
-                Console.WriteLine("Error añadiendo aplicación");
+                Console.WriteLine("Error creando usuario");
 
                 return;
             }
-        }*/
+        }
+
+        public void borrar_aplicacion()
+        {
+            try
+            {
+                m_cc = new AplicacionCAD("../webdb");
+            }
+            catch (Error e)
+            {
+                Console.WriteLine("Error borrando usuario");
+
+                return;
+            }
+        }
 
         public string Nombre
         {
@@ -180,6 +192,10 @@ namespace cherryWebClassLibrary
         private DateTime fecha_hora;
         private string mensaje;
 
+        //Datos
+
+        private MensajeCAD m_cc;
+
         public ENMensaje(DateTime d, int i=0, string a1="", string a2="", string m="")
         {
             _ID = i;
@@ -187,6 +203,34 @@ namespace cherryWebClassLibrary
             apodo_2 = a2;
             fecha_hora = d;
             mensaje = m;
+        }
+
+        public void nuevo_mensaje()
+        {
+            try
+            {
+                m_cc = new MensajeCAD("../webdb");
+            }
+            catch (Error e)
+            {
+                Console.WriteLine("Error creando usuario");
+
+                return;
+            }
+        }
+
+        public void borrar_mensaje()
+        {
+            try
+            {
+                m_cc = new MensajeCAD("../webdb");
+            }
+            catch (Error e)
+            {
+                Console.WriteLine("Error borrando usuario");
+
+                return;
+            }
         }
 
         private int ID
@@ -222,11 +266,29 @@ namespace cherryWebClassLibrary
         private string apodo;
         private string aplicacion;
 
+        //Datos
+
+        private ValoracionesUsuarioCAD m_cc;
+
         public ENValoracionesUsuario(int v = 0, string a = "", string n = "")
         {
             valoracion = v;
             apodo = a;
             aplicacion = n;
+        }
+
+        public void nueva_valoracion()
+        {
+            try
+            {
+                m_cc = new ValoracionesUsuarioCAD("../webdb");
+            }
+            catch (Error e)
+            {
+                Console.WriteLine("Error creando usuario");
+
+                return;
+            }
         }
 
         private int Valoracion
@@ -252,10 +314,28 @@ namespace cherryWebClassLibrary
         private string usuario;
         private string redSocial;
 
+        //Datos
+
+        private RedesSocialesCAD m_cc;
+
         public ENRedesSociales(string u = "", string rs = "")
         {
             usuario = u;
             redSocial = rs;
+        }
+
+        public void nueva_cuenta_usuario()
+        {
+            try
+            {
+                m_cc = new RedesSocialesCAD("../webdb");
+            }
+            catch (Error e)
+            {
+                Console.WriteLine("Error creando usuario");
+
+                return;
+            }
         }
 
         private string Usuario
@@ -275,10 +355,28 @@ namespace cherryWebClassLibrary
         private int numerototal;
         private string aplicacion;
 
+        //Datos
+
+        DescargasCAD m_cc;
+
         public ENDescargas(int nt=0, string a="")
         {
             numerototal = nt;
             aplicacion = a;
+        }
+
+        public void nueva_descarga()
+        {
+            try
+            {
+                m_cc = new DescargasCAD("../webdb");
+            }
+            catch (Error e)
+            {
+                Console.WriteLine("Error creando usuario");
+
+                return;
+            }
         }
 
         private int Numerototal
@@ -297,6 +395,8 @@ namespace cherryWebClassLibrary
     {
         private float media;
         private string aplicacion;
+
+        //Datos
 
         public ENMediaAplicaciones(float m = 0, string a = "")
         {
