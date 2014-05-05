@@ -2,3 +2,5 @@ C:\Users\Alvaro-VM\Desktop\web\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryW
 C:\Users\Alvaro-VM\Desktop\web\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.pdb
 C:\Users\Alvaro-VM\Desktop\web\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLibrary.dll
 C:\Users\Alvaro-VM\Desktop\web\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLibrary.pdb
+C:\Users\Jorge\web\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLibrary.dll
+C:\Users\Jorge\web\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLibrary.pdb
