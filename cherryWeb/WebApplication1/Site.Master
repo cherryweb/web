@@ -22,7 +22,7 @@
         <div class="clear hideSkiplink">
                 <asp:Menu ID="Menu1" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inicio" Value="Inicio"/>
+                        <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Inicio" Value="Inicio"/>
                         <asp:MenuItem Text="Aplicaciones" Value="Aplicaciones"></asp:MenuItem>
                         <asp:MenuItem Text="Màs votados" Value="Màs votados"></asp:MenuItem>
                         <asp:MenuItem Text="Más descargadas" Value="Más descargadas"/>
