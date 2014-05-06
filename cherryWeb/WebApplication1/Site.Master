@@ -27,6 +27,8 @@
                         <asp:MenuItem Text="Màs votados" Value="Màs votados"></asp:MenuItem>
                         <asp:MenuItem Text="Más descargadas" Value="Más descargadas"/>
                         <asp:MenuItem Text="Nuevas Apps" Value="Nuevas Apps"></asp:MenuItem>
+                        <asp:MenuItem Text="Iniciar Sesion" Value="Iniciar Sesion"></asp:MenuItem>
+                        <asp:MenuItem Text="Registro" Value="Registro"></asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>
