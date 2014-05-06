@@ -12,29 +12,31 @@
 <body>
     <form runat="server">
     <div class="page">
-        <div class="header">
+        <div class="header" align="center" 
+            style="top: auto; left: auto; bottom: auto; right: auto;">
             <div class="title">
                 <h1>
                     LOGOTIPO</h1>
             </div>
-            <div class="clear hideSkiplink">
-                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+        </div> 
+        <div class="clear hideSkiplink">
+                <asp:Menu ID="Menu1" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Página principal"/>
-                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Acerca de"/>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inicio" Value="Inicio"/>
+                        <asp:MenuItem Text="Aplicaciones" Value="Aplicaciones"></asp:MenuItem>
+                        <asp:MenuItem Text="Màs votados" Value="Màs votados"></asp:MenuItem>
+                        <asp:MenuItem Text="Más descargadas" Value="Más descargadas"/>
+                        <asp:MenuItem Text="Nuevas Apps" Value="Nuevas Apps"></asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>
-        </div>
         <div class="main">
             <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
-        </div>
-        <div class="clear">
         </div>
     </div>
     <div class="footer">
         
-    </div>
+        DESIGNED BY RAULO</div>
     </form>
 </body>
 </html>

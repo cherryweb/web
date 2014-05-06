@@ -103,6 +103,7 @@ first child of the left and right table columns */
     width: 100%;
     top: 4px;
     left: 1px;
+    height: 140px;
 }
 
 .header h1
@@ -117,6 +118,7 @@ first child of the left and right table columns */
     line-height: 2em;
     font-size: 2em;
     text-align: center;
+    height: 52px;
 }
 
 .main
