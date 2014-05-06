@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cherryWebClassLibrary", "cherryWebClassLibrary\cherryWebClassLibrary.csproj", "{97DA007B-047E-4C06-8417-D16EBBB111D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cherryWebApplication", "cherryWebApplication\cherryWebApplication.csproj", "{3BD973D3-3B9D-4667-8E88-11B4679055B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{ADE6C612-30D4-45CB-BAE0-820A569F1A1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,10 @@ Global
 		{97DA007B-047E-4C06-8417-D16EBBB111D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97DA007B-047E-4C06-8417-D16EBBB111D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97DA007B-047E-4C06-8417-D16EBBB111D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3BD973D3-3B9D-4667-8E88-11B4679055B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3BD973D3-3B9D-4667-8E88-11B4679055B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3BD973D3-3B9D-4667-8E88-11B4679055B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3BD973D3-3B9D-4667-8E88-11B4679055B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE6C612-30D4-45CB-BAE0-820A569F1A1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE6C612-30D4-45CB-BAE0-820A569F1A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE6C612-30D4-45CB-BAE0-820A569F1A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE6C612-30D4-45CB-BAE0-820A569F1A1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
