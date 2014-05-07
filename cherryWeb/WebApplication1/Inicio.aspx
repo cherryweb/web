@@ -8,10 +8,26 @@
         <asp:Button ID="BotonBuscar" runat="server" Text="Enviar" Height ="20 px"/>
     </div>
     <div>
-    <div></div>
-    <div></div>
-    <div></div>    
-            
+          <asp:GridView ID="GridView1" Width="33%" style="float:left" 
+              AutoGenerateColumns="False" runat="server">
+              <Columns>
+                  <asp:BoundField HeaderText="New" />
+              </Columns>
+            </asp:GridView>
+        
+        
+            <asp:GridView ID="GridView3" Width="33%" style="float:left" AutoGenerateColumns="false" runat="server">
+            <Columns>
+                  <asp:BoundField HeaderText="Most Valored" />
+              </Columns>
+            </asp:GridView>
+     
+      
+            <asp:GridView ID="GridView2" Width="33%" style="float:left" AutoGenerateColumns="false" runat="server">
+            <Columns>
+                  <asp:BoundField HeaderText="Most Download" />
+              </Columns>
+            </asp:GridView>
        
     </div>
 </asp:Content>
