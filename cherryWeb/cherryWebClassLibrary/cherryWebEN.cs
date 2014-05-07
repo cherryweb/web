@@ -350,7 +350,7 @@ namespace cherryWebClassLibrary
             set { redSocial = value; }
         }
     }
-    private class ENDescargas
+    public class ENDescargas
     {
         private int numerototal;
         private string aplicacion;
