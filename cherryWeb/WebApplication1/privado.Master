@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="privado.Master.cs" Inherits="WebApplication1.SiteMaster" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -16,7 +16,7 @@
             style="top: auto; left: auto; bottom: auto; right: auto;">
             <div class="title">
                 <h1>
-                    LOGOTIPO</h1>
+                    MASTER DE LA PARTE PRIVADA</h1>
             </div>
         </div> 
         <div class="clear hideSkiplink">
@@ -26,10 +26,8 @@
                         <asp:MenuItem Text="Aplicaciones" Value="Aplicaciones"></asp:MenuItem>
                         <asp:MenuItem Text="Màs votados" Value="Màs votados"></asp:MenuItem>
                         <asp:MenuItem Text="Más descargadas" Value="Más descargadas"/>
-                        <asp:MenuItem Text="Nuevas Apps" Value="Nuevas Apps"></asp:MenuItem>
-                        <asp:MenuItem Text="Iniciar Sesion" Value="Iniciar Sesion" 
-                            NavigateUrl="~/InicioSesion.aspx"></asp:MenuItem>
-                        <asp:MenuItem Text="Registro" Value="Registro" NavigateUrl="~/Registro.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Subir App" Value="Subir App"></asp:MenuItem>
+                        <asp:MenuItem Text="Mi perfil" Value="Mi perfil"></asp:MenuItem>
                     </Items>
                 </asp:Menu>
             </div>

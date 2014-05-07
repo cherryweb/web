@@ -7,8 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication1
 {
-    public partial class About : System.Web.UI.Page
+    public partial class SiteMaster : System.Web.UI.MasterPage
     {
-
     }
 }
