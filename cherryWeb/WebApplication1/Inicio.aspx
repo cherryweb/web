@@ -7,25 +7,24 @@
         <asp:TextBox ID="TextBox1" runat="server" Height="20px"></asp:TextBox>
         <asp:Button ID="BotonBuscar" runat="server" Text="Enviar" Height ="20 px"/>
     </div>
-    <div>
-          <asp:GridView ID="GridView1" Width="33%" style="float:left" 
-              AutoGenerateColumns="False" runat="server">
+    <div style="height:auto; width: auto;">
+          <asp:GridView ID="GridView1" Width="33%" Height="100%" style="display:inline" HeaderStyle-ForeColor="Red" AutoGenerateColumns="False" BackColor="Aqua" runat="server">
               <Columns>
-                  <asp:BoundField HeaderText="New" />
+                  <asp:BoundField DataField="prueba" HeaderText="New" />
               </Columns>
             </asp:GridView>
         
         
-            <asp:GridView ID="GridView3" Width="33%" style="float:left" AutoGenerateColumns="false" runat="server">
+            <asp:GridView ID="GridView3"  Width="33%" Height="100%" style="display:inline" AutoGenerateColumns="false" BackColor="Aqua" HeaderStyle-ForeColor="Red" runat="server">
             <Columns>
-                  <asp:BoundField HeaderText="Most Valored" />
+                  <asp:BoundField DataField="prueba" HeaderText="Most Valored" />
               </Columns>
             </asp:GridView>
      
       
-            <asp:GridView ID="GridView2" Width="33%" style="float:left" AutoGenerateColumns="false" runat="server">
+            <asp:GridView ID="GridView2" Width="33.9%" Height="100%" style="display:inline" AutoGenerateColumns="false" BackColor="Aqua" HeaderStyle-ForeColor="Red" runat="server">
             <Columns>
-                  <asp:BoundField HeaderText="Most Download" />
+                  <asp:BoundField DataField="prueba" HeaderText="Most Download" />
               </Columns>
             </asp:GridView>
        
