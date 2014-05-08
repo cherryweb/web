@@ -150,13 +150,15 @@ first child of the left and right table columns */
 
 div.hideSkiplink
 {
-    background-color:#000000;
-    width:100%;
+    
+    background-image: url('../Imagenes/bariitamenu.jpg');
+    width: 100%;
 }
 
 div.menu
 {
     padding: 4px 0px 4px 8px;
+    
 }
 
 div.menu ul
@@ -169,9 +171,9 @@ div.menu ul
 
 div.menu ul li a, div.menu ul li a:visited
 {
-    background-color: #465c71;
+    background-color: #317981;
     border: 1px #4e667d solid;
-    color: #dde4ec;
+    color: #45fffe;
     display: block;
     line-height: 1.35em;
     padding: 4px 20px;
