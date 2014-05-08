@@ -7,3 +7,7 @@ C:\Users\Alvaro-VM\Desktop\web\cherryWeb\WebApplication1\bin\WebApplication1.dll
 C:\Users\Alvaro-VM\Desktop\web\cherryWeb\WebApplication1\bin\WebApplication1.pdb
 C:\Users\Alvaro-VM\Desktop\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Alvaro-VM\Desktop\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Jorge\web\web\cherryWeb\WebApplication1\bin\WebApplication1.dll
+C:\Users\Jorge\web\web\cherryWeb\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Jorge\web\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Jorge\web\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.pdb
