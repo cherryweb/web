@@ -22,25 +22,25 @@
             <img alt="" src="" style="height: 356px; width: 349px" /></td>
         <td colspan="2">
             <asp:Label ID="LApodo" runat="server" Text="Apodo:"></asp:Label>
-            <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LApodo2" runat="server" Text="Label"></asp:Label>
         </td>
     </tr>
     <tr>
         <td colspan="2">
             <asp:Label ID="LContacto" runat="server" Text="Contacto:"></asp:Label>
-            <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LContacto2" runat="server" Text="Label"></asp:Label>
         </td>
     </tr>
     <tr>
         <td colspan="2">
             <asp:Label ID="LPais" runat="server" Text="Pais:"></asp:Label>
-            <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LPais2" runat="server" Text="Label"></asp:Label>
         </td>
     </tr>
     <tr>
         <td>
             <asp:Label ID="LFacebook" runat="server" Text="Facebook:"></asp:Label>
-            <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LFacebook2" runat="server" Text="Label"></asp:Label>
         </td>
     </tr>
     <tr>
