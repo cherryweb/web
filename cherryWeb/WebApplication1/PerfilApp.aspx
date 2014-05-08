@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/privado.Master" AutoEventWireup="true" CodeBehind="PerfilApp.aspx.cs" Inherits="WebApplication1.PerfilApp" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PerfilApp.aspx.cs" Inherits="WebApplication1.PerfilApp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style type="text/css">
     .style1
@@ -13,13 +13,17 @@
         position: absolute;
         height: 22px;
     }
-</style>
+        .style2
+        {
+            height: 34px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <table style="width:100%;">
     <tr>
         <td class="style1" rowspan="5">
-            <img alt="" src="" style="height: 356px; width: 349px" /></td>
+            <img alt="" src="" style="height: 89px; width: 97px" /></td>
         <td colspan="2">
             <asp:Label ID="NombreLabel" runat="server" Text="Nombre:"></asp:Label>
             <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
@@ -38,14 +42,15 @@
         </td>
     </tr>
     <tr>
-        <td>
+        <td class="style2">
             <asp:Label ID="ValoracionLabel" runat="server" Text="Valoración:"></asp:Label>
             <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
         </td>
-        <td>
+        <td class="style2">
             <asp:Label ID="MiValoracionLabel" runat="server" Text="Mi valoración:"></asp:Label>
             <asp:DropDownList ID="DropDownList1" runat="server" 
-                style="top: 434px; left: 797px; position: absolute; height: 22px; width: 40px">
+                
+                style="top: 278px; left: 679px; position: absolute; height: 22px; width: 40px">
                 <asp:ListItem>0</asp:ListItem>
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
@@ -62,7 +67,7 @@
         </td>
     </tr>
     <tr>
-        <td colspan="2">
+        <td colspan="2" style="text-align: center">
             <asp:Button ID="BotonDescargar" runat="server" Text="DESCARGAR" />
         </td>
     </tr>
