@@ -13,13 +13,13 @@ namespace WebApplication1 {
     public partial class PerfilApp {
         
         /// <summary>
-        /// Control Label1.
+        /// Control NombreLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label NombreLabel;
         
         /// <summary>
         /// Control Label5.
@@ -31,13 +31,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// Control Label2.
+        /// Control DescripcionLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label DescripcionLabel;
         
         /// <summary>
         /// Control Label6.
@@ -49,13 +49,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// Control Label3.
+        /// Control PrecioLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label PrecioLabel;
         
         /// <summary>
         /// Control Label7.
@@ -67,13 +67,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
-        /// Control Label4.
+        /// Control ValoracionLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label ValoracionLabel;
         
         /// <summary>
         /// Control Label8.
@@ -85,13 +85,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
-        /// Control Label9.
+        /// Control MiValoracionLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
+        protected global::System.Web.UI.WebControls.Label MiValoracionLabel;
         
         /// <summary>
         /// Control DropDownList1.
@@ -103,12 +103,12 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
-        /// Control Button1.
+        /// Control BotonDescargar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button BotonDescargar;
     }
 }

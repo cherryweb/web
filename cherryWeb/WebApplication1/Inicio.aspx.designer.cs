@@ -13,22 +13,22 @@ namespace WebApplication1 {
     public partial class Inicio {
         
         /// <summary>
-        /// Control Label1.
+        /// Control BuscarLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label BuscarLabel;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control BuscarBox.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox BuscarBox;
         
         /// <summary>
         /// Control BotonBuscar.
