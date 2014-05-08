@@ -23,10 +23,14 @@
                 <asp:Menu ID="Menu1" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Inicio" Value="Inicio"/>
-                        <asp:MenuItem Text="Aplicaciones" Value="Aplicaciones"></asp:MenuItem>
-                        <asp:MenuItem Text="Màs votados" Value="Màs votados"></asp:MenuItem>
-                        <asp:MenuItem Text="Más descargadas" Value="Más descargadas"/>
-                        <asp:MenuItem Text="Nuevas Apps" Value="Nuevas Apps"></asp:MenuItem>
+                        <asp:MenuItem Text="Aplicaciones" Value="Aplicaciones" 
+                            NavigateUrl="~/Aplicaciones.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Màs votados" Value="Màs votados" 
+                            NavigateUrl="~/Aplicaciones.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Más descargadas" Value="Más descargadas" 
+                            NavigateUrl="~/Aplicaciones.aspx"/>
+                        <asp:MenuItem Text="Nuevas Apps" Value="Nuevas Apps" 
+                            NavigateUrl="~/Aplicaciones.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Iniciar Sesion" Value="Iniciar Sesion" 
                             NavigateUrl="~/InicioSesion.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Registro" Value="Registro" NavigateUrl="~/Registro.aspx"></asp:MenuItem>
@@ -39,7 +43,7 @@
     </div>
     <div class="footer">
         
-        DESIGNED BY RAULO</div>
+        DESIGNED BY RAULONG</div>
     </form>
 </body>
 </html>
