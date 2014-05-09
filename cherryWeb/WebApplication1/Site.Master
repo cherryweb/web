@@ -20,9 +20,8 @@
 <body>
     <form runat="server">
     <div class="page">
-        <div class="header" align="center" 
-            style="top: auto; left: auto; bottom: auto; right: auto;" >
-            <img alt="" src="/Imagenes/Android2.jpg" style="height: 100%; width: 100%" />
+        <div class="header" >
+            <asp:Image id="ImageFondo" runat="server" Height="100%" ImageUrl="~/Imagenes/Android2.jpg" Width="100%" AlternateText="Imagen no disponible" ImageAlign="TextTop" />
    
         </div> 
         <div class="clear hideSkiplink" >

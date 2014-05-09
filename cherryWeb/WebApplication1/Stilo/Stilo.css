@@ -96,15 +96,19 @@ first child of the left and right table columns */
 
 .header
 {
+    
+    
+    
     position: relative;
     margin: 0px;
     padding: 0px;
     width: 100%;
-    top: 4px;
-    left: 1px;
+    top: auto;
+    left: auto;
     height: 140px;
 }
 
+    
 .header h1
 {
     border-style: none;
