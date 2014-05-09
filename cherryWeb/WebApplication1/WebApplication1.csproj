@@ -57,6 +57,7 @@
     <Content Include="Aplicaciones.aspx" />
     <Content Include="Imagenes\Android.jpg" />
     <Content Include="Imagenes\Android2.jpg" />
+    <Content Include="Imagenes\androide.jpg" />
     <Content Include="Imagenes\bariitamenu.jpg" />
     <Content Include="Inicio.aspx" />
     <Content Include="InicioSesion.aspx" />
@@ -168,9 +169,7 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />

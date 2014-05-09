@@ -96,9 +96,6 @@ first child of the left and right table columns */
 
 .header
 {
-    
-    
-    
     position: relative;
     margin: 0px;
     padding: 0px;
@@ -126,8 +123,9 @@ first child of the left and right table columns */
 
 .main
 {
-    padding: 0px 12px;
-    margin: 12px 8px 8px 8px;
+    background-image: url('../Imagenes/androide.jpg');
+    padding: 0px 0px;
+    margin: 0px 0px 0px px;
     min-height: 420px;
 }
 
@@ -161,8 +159,7 @@ div.hideSkiplink
 
 div.menu
 {
-    padding: 4px 0px 4px 8px;
-    
+    padding: 4px 0px 4px 0px;
 }
 
 div.menu ul
