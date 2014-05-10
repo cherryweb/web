@@ -71,6 +71,7 @@
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Styles\Site.css" />
+    <Content Include="SubirApp.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -167,6 +168,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SubirApp.aspx.cs">
+      <DependentUpon>SubirApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubirApp.aspx.designer.cs">
+      <DependentUpon>SubirApp.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
