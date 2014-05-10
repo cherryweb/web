@@ -59,6 +59,7 @@
     <Content Include="Imagenes\Android2.jpg" />
     <Content Include="Imagenes\androide.jpg" />
     <Content Include="Imagenes\bariitamenu.jpg" />
+    <Content Include="Imagenes\ImagenNoDisp.jpg" />
     <Content Include="Inicio.aspx" />
     <Content Include="InicioSesion.aspx" />
     <Content Include="PerfilApp.aspx" />

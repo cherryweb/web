@@ -9,6 +9,7 @@ body
     margin: 0px;
     padding: 0px;
     color: #696969;
+    
 }
 
 a:link, a:visited
@@ -124,9 +125,13 @@ first child of the left and right table columns */
 .main
 {
     background-image: url('../Imagenes/androide.jpg');
+    background-position:center,top;
+    background-repeat:repeat;
     padding: 0px 0px;
     margin: 0px 0px 0px px;
     min-height: 420px;
+    background-attachment: scroll;
+    text-align: center;
 }
 
 .leftCol
@@ -149,6 +154,22 @@ first child of the left and right table columns */
 
 /* TAB MENU   
 ----------------------------------------------------------*/
+
+div.centrado
+{
+    
+    width: 100%;
+    margin: auto auto 40px auto ;
+}
+div.centradoulti
+{
+    width: 100%;
+    margin: auto auto auto auto ;
+}
+div.margen
+{
+    height: 40px;
+}
 
 div.hideSkiplink
 {
