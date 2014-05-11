@@ -28,10 +28,13 @@ a:active
     color: #034af3;
 }
 
-p
+p.medio
 {
-    margin-bottom: 10px;
-    line-height: 1.6em;
+    margin: auto auto 20px auto;
+}
+p.ultimo
+{
+    margin: auto atuo auto auto;
 }
 
 
@@ -125,13 +128,16 @@ first child of the left and right table columns */
 .main
 {
     background-image: url('../Imagenes/androide.jpg');
-    background-position:center,top;
-    background-repeat:repeat;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:#0E0E0E;
     padding: 0px 0px;
     margin: 0px 0px 0px px;
     min-height: 420px;
     background-attachment: scroll;
     text-align: center;
+    color: #45fffe;
+    
 }
 
 .leftCol
@@ -159,7 +165,7 @@ div.centrado
 {
     
     width: 100%;
-    margin: auto auto 40px auto ;
+    margin: auto auto 20px auto ;
 }
 div.centradoulti
 {
