@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="REGISTRO" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
     CodeBehind="Registro.aspx.cs" Inherits="WebApplication1.About" %>
 
-<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
-</asp:Content>
+
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     
     <div class="centrado">

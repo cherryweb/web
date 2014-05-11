@@ -1,8 +1,6 @@
 ﻿<%@ Page Title="Aplicaciones" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
     CodeBehind="Aplicaciones.aspx.cs" Inherits="WebApplication1.About" %>
 
-
-
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
        
     
