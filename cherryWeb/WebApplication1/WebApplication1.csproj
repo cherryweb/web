@@ -55,6 +55,10 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Aplicaciones.aspx" />
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
     <Content Include="Imagenes\Android.jpg" />
     <Content Include="Imagenes\Android2.jpg" />
     <Content Include="Imagenes\androide.jpg" />
