@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="privada.master.cs" Inherits="WebApplication1.privada" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+   <title> 
+    </title>
+    
+    <link href="Stilo/Stilo.css" rel="stylesheet" type="text/css" />
+   
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+   
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header" >
+            <asp:Image id="ImageFondo" runat="server" Height="100%" ImageUrl="~/Imagenes/Android2.jpg" Width="100%" AlternateText="Imagen no disponible" ImageAlign="TextTop" />
+   
+        </div> 
+        <div class="clear hideSkiplink" >
+                <asp:Menu ID="Menu1" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal"  >
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Inicio" Value="Inicio"/>
+                        <asp:MenuItem Text="Aplicaciones" Value="Aplicaciones" 
+                            NavigateUrl="~/Aplicaciones.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Màs votados" Value="Màs votados" 
+                            NavigateUrl="~/Aplicaciones.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Más descargadas" Value="Más descargadas" 
+                            NavigateUrl="~/Aplicaciones.aspx"/>
+                        <asp:MenuItem Text="Nuevas Apps" Value="Nuevas Apps" 
+                            NavigateUrl="~/Aplicaciones.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Mi perfil" Value="Iniciar Sesion" 
+                            NavigateUrl="~/PerfilUsuario.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Subir App" Value="Subir App" NavigateUrl="~/SubirApp.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+    </div>
+    <div class="footer">
+        DESIGNED BY RAULONG</div>
+    </form>
+</body>
+</html>
+
