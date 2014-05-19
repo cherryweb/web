@@ -43,8 +43,7 @@ namespace cherryWebClassLibrary
             aux.Nombre = dr["Nombre"].ToString();
             aux.Apodo = dr["Apodo"].ToString();
             aux.Boletin = (bool)dr["Boletin"];
-            aux.Email_contacto = dr["Email_contacto"].ToString();
-            aux.Email_registro = dr["Email-registro"].ToString();
+            aux.Email = dr["Email"].ToString();
             aux.Foto= dr["Foto"].ToString();
             aux.Password= dr["Contraseña"].ToString();
             aux.Pais= dr["Pais"].ToString();
@@ -57,13 +56,12 @@ namespace cherryWebClassLibrary
 
         public void nuevo_usuario(ENUsuario usuario)
         {
-            string s = "INSERT INTO USUARIOS(APODO, NOMBRE, CONTRASEÑA, EMAIL_REGISTRO, EMAIL_CONTACTO, PAIS, BOLETIN, FOTO_PERFIL) Values(@apod, @nomb, @pass, @email_reg, @email_contc, @country, @bolet, @foto_per)";
+            string s = "INSERT INTO USUARIOS(APODO, NOMBRE, CONTRASEÑA, EMAIL, PAIS, BOLETIN, FOTO_PERFIL) Values(@apod, @nomb, @pass, @email, @country, @bolet, @foto_per)";
             SqlCommand cm = new SqlCommand(s,conexion);
             cm.Parameters.AddWithValue("apod", usuario.Apodo);
             cm.Parameters.AddWithValue("nomb", usuario.Nombre);
             cm.Parameters.AddWithValue("pass",usuario.Password);
-            cm.Parameters.AddWithValue("email_reg", usuario.Email_registro);
-            cm.Parameters.AddWithValue("email_contc", usuario.Email_contacto);
+            cm.Parameters.AddWithValue("email", usuario.Email);
             cm.Parameters.AddWithValue("country", usuario.Pais);
             cm.Parameters.AddWithValue("bolet", usuario.Boletin);
             cm.Parameters.AddWithValue("foto_per", usuario.Foto);
@@ -75,11 +73,21 @@ namespace cherryWebClassLibrary
         public void borrar_usuario(string apodo)
         {
             //Código para borrar un usuario
+            string s = "DELETE FROM USUARIOS WHERE apodo = '" + apodo + "'"; 
         }
 
         public void actualizar_usuario(ENUsuario usuario)
         {
             //Código para actualizar un usuario. Por si cambia su e-mail, nombre etc...
+            string orden = "UPDATE USUARIOS ";
+            orden += "set nombre = '" + usuario.Nombre + "', ";
+            orden += "password = '" + usuario.Password + "', ";
+            orden += "email = '" + usuario.Email + "', ";
+            orden += "pais = '" + usuario.Pais + "', ";
+            orden += "boletin = '" + usuario.Boletin + "', ";
+            orden += "fotoPerfil = '" + usuario.Foto + "', ";
+            orden += "paypal = '" + usuario.Paypal + "', ";
+            orden += "where apodo = '" + usuario.Apodo + "'";
         }
     }
 
@@ -90,34 +98,46 @@ namespace cherryWebClassLibrary
             //Adquiere la cadena de conexión desde un único sitio.
         }
 
-        public ENAplicaciones dameAplicacion(string nombre)
+        public ENAplicaciones dameAplicacion(string nombre)//VER
         {
-            // Código para recuperar un tipo DataSet conteniendo los datos del Aplicacion
+            // Código para recuperar un tipo DataSet conteniendo los datos del Aplicacion.
+
         }
 
         public void nueva_aplicacion(ENAplicaciones aplicacion)
         {
-            //Código para crear una nueva aplicacion
+            //Código para crear una nueva aplicacion.
+            string orden = "INSERT INTO APLICACIONES VALUES('"+ aplicacion.Nombre + "', " + aplicacion.Descripcion + "', " + aplicacion + "', " + aplicacion.Peso + "', " + aplicacion.Peso + "', " + aplicacion.PVP + "', " + aplicacion.Imagen + "')";
         }
 
         public void borra_aplicacion(string nombre)
         {
             //Código para borrar una aplicación
+            string orden = "DELETE FROM APLICACIONES WHERE nombre = ' " + nombre + "'";
         }
 
         public void actualiza_aplicacion(ENAplicaciones aplicacion)
         {
             //Código para actualizar una aplicación. Cambio de descripción etc...
+            string orden = "UPDATE APLICACIONES ";
+            orden += "set descripcion = '" + aplicacion.Descripcion + "', ";
+            orden += "categoria = '" + aplicacion.Categoria + "', ";
+            orden += "peso = '" + aplicacion.Peso + "', ";
+            orden += "pvp = '" + aplicacion.PVP + "', ";
+            orden += "imagen = '" + aplicacion.Imagen + "', ";
+            orden += "where nombre = '" + aplicacion.Nombre + "'";
         }
 
         public void aplicacionesPorPeso(float peso)
         {
             //Sacar aplicaciones filtradas por su peso.
+            string orden = "SELECT nombre FROM APLICACIONES where peso < '"+ peso + "'";
         }
 
         public void aplicacionesPorPrecio(float PVP)
         {
             //Sacar aplicaciones filtradas por su precio.
+            string orden = "SELECT nombre FROM APLICACIONES where PVP < "+ PVP + "'";
         }
     }
 
@@ -131,21 +151,25 @@ namespace cherryWebClassLibrary
         public ENMensaje dameMensaje(ENMensaje mensaje)
         {
             // Código para recuperar un tipo DataSet conteniendo los datos del Mensaje
+
         }
 
         public void nuevo_mensaje(ENMensaje mensaje)
         {
             //Código para crear un nuevo mensaje
+            string orden = "INSERT INTO MENSAJE VALUES('" + mensaje.ID + "', " + mensaje.Fecha_hora + "', " + mensaje.Mensaje + "', " + mensaje.Emisor + "', " + mensaje.Receptor + "')";
         }
 
         public void borrar_mensaje(int id)
         {
             //Código para borrar un mensaje
+            string orden = "DELETE FROM MENSAJE WHERE ID = ' " + id + "'";
         }
 
         public void mensajePorFecha(DateTime data)
         {
             //Sacar mensajes filtradas por la fecha en la que fueron enviados/recibidos
+            string orden = "SELECT mensaje FROM MENSAJE where fecha = ' " + data + "'";
         }
     }
 
@@ -156,19 +180,22 @@ namespace cherryWebClassLibrary
             //Adquiere la cadena de conexión desde un único sitio.
         }
 
-        public ENValoracionesUsuario nueva_valoracion(ENValoracionesUsuario valoracion)
+        public void nueva_valoracion(ENValoracionesUsuario valoracion)
         {
             //Código para crear una nueva valoracion
+            string orden = "INSERT INTO VALORACIONES VALUES('" + valoracion.Apodo + "', " + valoracion.Aplicacion + "', " + valoracion.Valoracion + "')";
         }
 
         public void aplicacionesConValoracionSuperiorA(int valoracion)
         {
             //Saca las aplicaciones que tienen una valoracion superior a la indicada
+            string orden = "SELECT aplicacion FROM VALORACIONES WHERE valoracion > '"+ valoracion+ "'";
         }
 
         public void aplicacionesConValoracionInferiorA(int valoracion)
         {
             //Saca las aplicaciones que tienen una valoracion inferior a la indicada
+            string orden = "SELECT aplicacion FROM VALORACIONES WHERE valoracion < '" +valoracion +"'";
         }
     }
 
@@ -179,14 +206,14 @@ namespace cherryWebClassLibrary
             //Adquiere la cadena de conexión desde un único sitio.
         }
 
-        public ENRedesSociales agregar_cuenta_usuario(ENRedesSociales red)
+        public void agregar_cuenta_usuario(ENRedesSociales red)
         {
-
+            string orden = "INSERT INTO RedesSociales VALUES('" + red.Usuario + "', " + red.RedSocial + "')";
         }
 
         public void actualizar_cuenta(string usuario, string cuenta)
         {
-
+            string orden = "UPDATE RedesSociales " +"set redesSociales = '" + cuenta + "' WHERE usuario = ' " + usuario + "'";
         }
     }
 
@@ -197,9 +224,9 @@ namespace cherryWebClassLibrary
             //Adquiere la cadena de conexión desde un único sitio.
         }
 
-        public ENDescargas nueva_descarga(ENDescargas desarga)
+        public void nueva_descarga(ENDescargas descarga)
         {
-
+            string orden = "INSERT INTO Descargan VALUES('" + descarga.Usuario + "', " + descarga.Aplicacion + "', " + descarga.Valoracion + "')";
         }
 
         public int numeroDescargas(string aplicacion)
@@ -207,6 +234,8 @@ namespace cherryWebClassLibrary
             //Numero de descargas que tiene una aplicación.
 
             int numDescargas = 0;
+
+            string orden = "SELECT COUNT(*) FROM DESCARGAN WHERE aplicacion = ' " + aplicacion + "'";
 
             return numDescargas;
         }
@@ -223,6 +252,7 @@ namespace cherryWebClassLibrary
         public float CalculoMediaAplicacion(string aplicacion)
         {
             float media=0;
+            string orden = "SELECT avg(valoracion) where aplicacion = ' " + aplicacion + "'";
             return media;
         }
     }
