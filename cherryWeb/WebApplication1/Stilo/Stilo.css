@@ -127,16 +127,19 @@ first child of the left and right table columns */
 
 .main
 {
-    background-image: url('../Imagenes/androide.jpg');
-    background-position:center;
-    background-repeat:no-repeat;
-    background-color:#0E0E0E;
+        color: #000000;
+    background-color:#000000;
+      
+    background-image: url('../Imagenes/AndroidBG2.jpg');
+    background-position:right;
+    background-repeat:repeat;
+        border-left-color: #000000;
     padding: 0px 0px;
     margin: 0px 0px 0px px;
     min-height: 420px;
     background-attachment: scroll;
     text-align: center;
-    color: #45fffe;
+    background-color:#0E0E0E;
     
 }
 
