@@ -65,7 +65,9 @@
     <Content Include="Imagenes\AndroidBG.png" />
     <Content Include="Imagenes\androide.jpg" />
     <Content Include="Imagenes\bariitamenu.jpg" />
+    <Content Include="Imagenes\chendilon.png" />
     <Content Include="Imagenes\ImagenNoDisp.jpg" />
+    <Content Include="Imagenes\visit-korea-app.png" />
     <Content Include="Inicio.aspx" />
     <Content Include="InicioSesion.aspx" />
     <Content Include="PerfilApp.aspx" />

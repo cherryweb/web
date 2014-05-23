@@ -3,7 +3,7 @@
     <style type="text/css">
     .style1
     {
-        width: 16px;
+        width: 204px;
     }
     #Text1
     {
@@ -15,32 +15,32 @@
     }
 </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server" >
     <table style="width:100%;">
     <tr>
-        <td class="style1" rowspan="5">
-            <img alt="" src="" style="height: 356px; width: 349px" /></td>
-        <td colspan="2">
-            <asp:Label ID="LApodo" runat="server" Text="Apodo:"></asp:Label>
-            <asp:Label ID="LApodo2" runat="server" Text="Label"></asp:Label>
+        <td class="style1" rowspan="5" >
+            <img alt="" src="Imagenes/chendilon.png" style="height: 240px; width: 200px" /></td>
+        <td style="width:50%" colspan="2">
+            <asp:Label ID="LApodo" runat="server" Text="<b>Apodo:</b>" ></asp:Label>
+            <asp:Label ID="LApodo2" runat="server" Text="Chendilon"></asp:Label>
         </td>
     </tr>
     <tr>
         <td colspan="2">
-            <asp:Label ID="LContacto" runat="server" Text="Contacto:"></asp:Label>
-            <asp:Label ID="LContacto2" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LContacto" runat="server" Text="<b>Contacto:</b>"></asp:Label>
+            <asp:Label ID="LContacto2" runat="server" Text="rocososSA@gmail.com"></asp:Label>
         </td>
     </tr>
     <tr>
         <td colspan="2">
-            <asp:Label ID="LPais" runat="server" Text="Pais:"></asp:Label>
-            <asp:Label ID="LPais2" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LPais" runat="server" Text="<b>Pais:</b>"></asp:Label>
+            <asp:Label ID="LPais2" runat="server" Text="Guinea Ecuatorial"></asp:Label>
         </td>
     </tr>
     <tr>
         <td>
-            <asp:Label ID="LFacebook" runat="server" Text="Facebook:"></asp:Label>
-            <asp:Label ID="LFacebook2" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LFacebook" runat="server" Text="<b>Facebook:</b>"></asp:Label>
+            <asp:Label ID="LFacebook2" runat="server" Text="www.facebook.com/chendilong"></asp:Label>
         </td>
     </tr>
     <tr>
