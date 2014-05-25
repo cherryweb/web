@@ -32,5 +32,19 @@ namespace WebApplication1
         {
             
         }
+
+        protected void subirapp_subirboton_Click(object sender, EventArgs e)
+        {
+            ENAplicaciones nuevo = new ENAplicaciones(subirapp_nombretextbox.Text, subirapp_categoriaList.Text, subirapp_descripciontextbox.Text, usuarioActual.Apodo, (Convert.ToInt32(subirapp_pvptextbox.Text)));
+            Response.Write(nuevo.Nombre + " " + nuevo.Categoria + " " + nuevo.Descripcion + " " + nuevo.Usuario + " " + nuevo.PVP);
+            nuevo.commitDB();
+
+            Response.Redirect("inicio.aspx?nuevo=ok");
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

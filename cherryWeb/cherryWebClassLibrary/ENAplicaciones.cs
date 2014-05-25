@@ -13,17 +13,19 @@ namespace cherryWebClassLibrary
         private float peso;
         private float _PVP;
         private string imagen;
+        private string usuario;
 
         //Datos
         private AplicacionCAD m_cc;
 
-        public ENAplicaciones(string n = "", string c = "", string d = "", string i = "", float p = 0, float pv = 0)
+        public ENAplicaciones(string n = "", string c = "", string d = "", string u="", float pv = 0)
         {
             nombre = n;
             descripcion = d;
             categoria = c;
-            imagen = i;
-            peso = p;
+            //imagen = i;
+            //peso = p;
+            usuario = u;
             pv = _PVP;
         }
 
@@ -84,6 +86,18 @@ namespace cherryWebClassLibrary
         {
             get { return imagen; }
             set { imagen = value; }
+        }
+        public string Usuario
+        {
+            get { return usuario; }
+            set { usuario = value; }
+        }
+
+        public bool commitDB()
+        {
+            // Inserta en la DB si no existe y lo actualiza si ya existía
+            AplicacionCAD cad = new AplicacionCAD(this);
+            return cad.nueva_aplicacion();
         }
     }
 }

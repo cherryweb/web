@@ -94,13 +94,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label subirapp_categorialabel;
         
         /// <summary>
-        /// Control DropDownList1.
+        /// Control subirapp_categoriaList.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList subirapp_categoriaList;
         
         /// <summary>
         /// Control subirapp_rutaapplabel.

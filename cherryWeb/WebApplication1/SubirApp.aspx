@@ -41,7 +41,10 @@
         <tr>
             <td class="style1">
                 <asp:Label ID="subirapp_categorialabel" runat="server" Text="Categoría:"></asp:Label>
-                <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:DropDownList ID="subirapp_categoriaList" runat="server" 
+                    onselectedindexchanged="DropDownList1_SelectedIndexChanged">
+                    <asp:ListItem>Deportes</asp:ListItem>
+                    <asp:ListItem>Ocio</asp:ListItem>
                 </asp:DropDownList>
             </td>
             <td>
