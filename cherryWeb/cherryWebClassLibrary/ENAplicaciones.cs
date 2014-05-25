@@ -26,7 +26,7 @@ namespace cherryWebClassLibrary
             //imagen = i;
             //peso = p;
             usuario = u;
-            pv = _PVP;
+            _PVP = pv;
         }
 
         /*public void nueva_aplicacion()

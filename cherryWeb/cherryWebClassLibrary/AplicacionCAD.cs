@@ -29,15 +29,15 @@ namespace cherryWebClassLibrary
         public bool nueva_aplicacion()
         {
             //Código para crear una nueva aplicacion.
-            string orden = "INSERT INTO APLICACIONES VALUES('" + aplicacion.Nombre + "', " + aplicacion.Descripcion + "', " + aplicacion + "', " + aplicacion.Peso + "', " + aplicacion.PVP + "', " + aplicacion.Imagen + "')";
+            //string orden = "INSERT INTO APLICACIONES VALUES('" + aplicacion.Nombre + "', " + aplicacion.Descripcion + "', " + aplicacion + "', " + aplicacion.Peso + "', " + aplicacion.PVP + "', " + aplicacion.Imagen + "')";
 
-            string s = "INSERT INTO APLICACIONES(NOMBRE, DESCRIPCION, CATEGORIA, PVP, USUARIO) Values(@nom, @desc, @cat, @pvp, @usuario)";
+            string s = "INSERT INTO APLICACIONES(NOMBRE, DESCRIPCION, CATEGORIA, PVP, USUARIO) Values(@nom, @desc, @cat, @pvp, @usu)";
             SqlCommand cm = new SqlCommand(s, conexion);
             cm.Parameters.AddWithValue("nom", aplicacion.Nombre);
             cm.Parameters.AddWithValue("desc", aplicacion.Descripcion);
             cm.Parameters.AddWithValue("cat", aplicacion.Categoria);
             cm.Parameters.AddWithValue("pvp", aplicacion.PVP);
-            cm.Parameters.AddWithValue("usuario", aplicacion.Usuario);
+            cm.Parameters.AddWithValue("usu", aplicacion.Usuario);
             //cm.Parameters.AddWithValue("bolet", usuario.Boletin);
             //cm.Parameters.AddWithValue("foto_per", usuario.Foto);
             conexion.Open();

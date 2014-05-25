@@ -41,8 +41,7 @@
         <tr>
             <td class="style1">
                 <asp:Label ID="subirapp_categorialabel" runat="server" Text="Categoría:"></asp:Label>
-                <asp:DropDownList ID="subirapp_categoriaList" runat="server" 
-                    onselectedindexchanged="DropDownList1_SelectedIndexChanged">
+                <asp:DropDownList ID="subirapp_categoriaList" runat="server">
                     <asp:ListItem>Deportes</asp:ListItem>
                     <asp:ListItem>Ocio</asp:ListItem>
                 </asp:DropDownList>
@@ -55,7 +54,8 @@
         <tr>
             <td class="style1" colspan="2">
                 <asp:Button ID="subirapp_subirboton" runat="server" Font-Bold="True" 
-                    style="text-align: center" Text="SUBIR" />
+                    style="text-align: center" Text="SUBIR" 
+                    onclick="subirapp_subirboton_Click1" />
             </td>
         </tr>
     </table>
