@@ -18,7 +18,7 @@ namespace cherryWebClassLibrary
         private string paypal;
 
         //Datos
-        private UsuarioCAD m_cc;
+       // private UsuarioCAD m_cc;
 
         public ENUsuario(string a = "", string n = "", string p = "", string e = "", string ps = "", bool b = false)
         {
@@ -30,6 +30,11 @@ namespace cherryWebClassLibrary
             boletin = b;
             //imagen = i;
             //paypal = p;
+        }
+
+        static public ENUsuario getUsuario(string apodo)
+        {
+            return UsuarioCAD.dameUsuario(apodo);
         }
 
         /* public ENUsuario[] getUsuario()
@@ -114,5 +119,7 @@ namespace cherryWebClassLibrary
             UsuarioCAD cad = new UsuarioCAD(this);
             return cad.nuevo_usuario();
         }
+
+       
     }    
 }

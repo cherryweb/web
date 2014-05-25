@@ -2,15 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Data.SqlClient;
+using System.Data;
 namespace cherryWebClassLibrary
 {
     public class AplicacionCAD
     {
-        ENAplicaciones aplicacion;
-        public AplicacionCAD(string db)
+
+        private const string cadenaconexion = "data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\Database.mdf;User Instance=true";
+        SqlConnection conexion = new SqlConnection(cadenaconexion);//crear conexion esto es la misma            siempre para todos
+
+        private ENAplicaciones aplicacion;
+
+        public AplicacionCAD(ENAplicaciones aplicacion)
         {
             //Adquiere la cadena de conexión desde un único sitio.
+            this.aplicacion = aplicacion;
         }
 
         public ENAplicaciones dameAplicacion(string nombre)//VER
@@ -22,7 +29,7 @@ namespace cherryWebClassLibrary
         public void nueva_aplicacion(ENAplicaciones aplicacion)
         {
             //Código para crear una nueva aplicacion.
-            string orden = "INSERT INTO APLICACIONES VALUES('" + aplicacion.Nombre + "', " + aplicacion.Descripcion + "', " + aplicacion + "', " + aplicacion.Peso + "', " + aplicacion.Peso + "', " + aplicacion.PVP + "', " + aplicacion.Imagen + "')";
+            string orden = "INSERT INTO APLICACIONES VALUES('" + aplicacion.Nombre + "', " + aplicacion.Descripcion + "', " + aplicacion + "', " + aplicacion.Peso + "', " + aplicacion.PVP + "', " + aplicacion.Imagen + "')";
         }
 
         public void borra_aplicacion(string nombre)

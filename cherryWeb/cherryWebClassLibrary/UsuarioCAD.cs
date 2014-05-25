@@ -28,27 +28,29 @@ namespace cherryWebClassLibrary
             this.usuario = usuario;
         }
 
-        public ENUsuario dameUsuario(string apodo)
+        public static ENUsuario dameUsuario(string apodo)
         {
             // Código para recuperar un tipo DataSet conteniendo los datos del Cliente
-
-            SqlCommand consulta = new SqlCommand("SELECT * FROM USUARIOS WHERE APODO=" + apodo, conexion);
+            SqlConnection conexion = new SqlConnection(cadenaconexion);//crear conexion esto es la misma            siempre para todos
+            SqlCommand consulta = new SqlCommand("SELECT APODO,NOMBRE,PASSWORD,EMAIL,PAIS,BOLETIN FROM USUARIOS WHERE APODO= '" + apodo + "'", conexion);
             SqlDataAdapter adapter = new SqlDataAdapter(consulta);//obtiene los datos
             SqlDataReader dr;
 
             conexion.Open();
 
             dr = consulta.ExecuteReader();
+            dr.Read();
 
             ENUsuario aux = new ENUsuario();
 
-            aux.Nombre = dr["Nombre"].ToString();
             aux.Apodo = dr["Apodo"].ToString();
-            aux.Boletin = (bool)dr["Boletin"];
+            aux.Nombre = dr["Nombre"].ToString();
             aux.Email = dr["Email"].ToString();
-            aux.Foto = dr["Foto"].ToString();
-            aux.Password = dr["Contraseña"].ToString();
             aux.Pais = dr["Pais"].ToString();
+            aux.Password = dr["Password"].ToString();
+            aux.Boletin = (bool)dr["boletin"];
+            //aux.Foto = dr["Foto"].ToString();
+
 
             conexion.Close();
 

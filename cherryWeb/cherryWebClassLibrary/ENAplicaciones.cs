@@ -27,7 +27,7 @@ namespace cherryWebClassLibrary
             pv = _PVP;
         }
 
-        public void nueva_aplicacion()
+        /*public void nueva_aplicacion()
         {
             try
             {
@@ -39,9 +39,9 @@ namespace cherryWebClassLibrary
 
                 return;
             }
-        }
+        }*/
 
-        public void borrar_aplicacion()
+        /*public void borrar_aplicacion()
         {
             try
             {
@@ -53,7 +53,7 @@ namespace cherryWebClassLibrary
 
                 return;
             }
-        }
+        }*/
 
         public string Nombre
         {

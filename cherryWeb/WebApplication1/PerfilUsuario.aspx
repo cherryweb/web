@@ -22,25 +22,25 @@
             <img alt="" src="Imagenes/chendilon.png" style="height: 240px; width: 200px" /></td>
         <td style="width:50%" colspan="2">
             <asp:Label ID="LApodo" runat="server" Text="<b>Apodo:</b>" ></asp:Label>
-            <asp:Label ID="LApodo2" runat="server" Text="Chendilon"></asp:Label>
+            <asp:Label ID="LApodo2" runat="server" Text=""></asp:Label>
         </td>
     </tr>
     <tr>
         <td colspan="2">
             <asp:Label ID="LContacto" runat="server" Text="<b>Contacto:</b>"></asp:Label>
-            <asp:Label ID="LContacto2" runat="server" Text="rocososSA@gmail.com"></asp:Label>
+            <asp:Label ID="LContacto2" runat="server" Text=""></asp:Label>
         </td>
     </tr>
     <tr>
         <td colspan="2">
             <asp:Label ID="LPais" runat="server" Text="<b>Pais:</b>"></asp:Label>
-            <asp:Label ID="LPais2" runat="server" Text="Guinea Ecuatorial"></asp:Label>
+            <asp:Label ID="LPais2" runat="server" Text=""></asp:Label>
         </td>
     </tr>
     <tr>
         <td>
             <asp:Label ID="LFacebook" runat="server" Text="<b>Facebook:</b>"></asp:Label>
-            <asp:Label ID="LFacebook2" runat="server" Text="www.facebook.com/chendilong"></asp:Label>
+            <asp:Label ID="LFacebook2" runat="server" Text=""></asp:Label>
         </td>
     </tr>
     <tr>
