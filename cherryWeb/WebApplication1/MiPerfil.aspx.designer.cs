@@ -10,7 +10,7 @@
 namespace WebApplication1 {
     
     
-    public partial class PerfilUsuario {
+    public partial class MiPerfil {
         
         /// <summary>
         /// Control LApodo.

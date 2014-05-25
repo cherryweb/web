@@ -8,7 +8,7 @@ using cherryWebClassLibrary;
 
 namespace WebApplication1
 {
-    public partial class PerfilUsuario : System.Web.UI.Page
+    public partial class MiPerfil : System.Web.UI.Page
     {
         protected ENUsuario usuarioActual = null;
 
@@ -29,8 +29,9 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (((ENUsuario)Session["Usuario"]) != null)
-                usuarioActual = ((ENUsuario)Session["Usuario"]);
+            LApodo2.Text = ((ENUsuario)Session["Usuario"]).Apodo;
+            LContacto2.Text = ((ENUsuario)Session["Usuario"]).Email;
+            LPais2.Text = ((ENUsuario)Session["Usuario"]).Pais;
         }
     }
 }

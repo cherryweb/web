@@ -33,8 +33,8 @@
                             NavigateUrl="~/Aplicaciones.aspx"/>
                         <asp:MenuItem Text="Nuevas Apps" Value="Nuevas Apps" 
                             NavigateUrl="~/Aplicaciones.aspx"></asp:MenuItem>
-                        <asp:MenuItem Text="Mi perfil" Value="Iniciar Sesion" 
-                            NavigateUrl="~/PerfilUsuario.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="MiPerfil" Value="MiPerfil" 
+                            NavigateUrl="~/MiPerfil.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Subir App" Value="Subir App" NavigateUrl="~/SubirApp.aspx"></asp:MenuItem>
                     </Items>
                 </asp:Menu>
