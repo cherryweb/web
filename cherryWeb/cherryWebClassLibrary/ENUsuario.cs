@@ -32,6 +32,11 @@ namespace cherryWebClassLibrary
             p = paypal;
         }
 
+        /* public ENUsuario[] getUsuario()
+        {
+            
+        }*/
+
         public void nuevo_usuario()
         {
             try
@@ -76,9 +81,7 @@ namespace cherryWebClassLibrary
         {
             get { return password; }
             set { password = value; }
-
         }
-
         public string Email
         {
             get { return email; }

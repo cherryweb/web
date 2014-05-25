@@ -22,9 +22,10 @@ namespace cherryWebClassLibrary
 
         private ENUsuario usuario;
 
-        public UsuarioCAD(string db)
+        public UsuarioCAD(ENUsuario usuario)
         {
             //Adquiere la cadena de conexión desde un único sitio.
+            this.usuario = usuario;
         }
 
         public ENUsuario dameUsuario(string apodo)
@@ -74,15 +75,14 @@ namespace cherryWebClassLibrary
         public bool borrar_usuario()
         {
             //Código para borrar un usuario
-            string s = "DELETE FROM USUARIOS WHERE apodo = '" + apodo + "'";
+            
 
             bool aR = false;
-
 
             SqlConnection conexion = new SqlConnection(cadenaconexion);
             conexion.Open();
 
-            string consulta = "DELETE from Usuario WHERE dni='" + usuario.getDni() + "'";
+            string consulta = "DELETE FROM USUARIOS WHERE apodo = '" + usuario.Apodo + "'";
 
             SqlCommand com2 = new SqlCommand(consulta, conexion);
 
