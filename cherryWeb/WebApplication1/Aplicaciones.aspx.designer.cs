@@ -10,7 +10,7 @@
 namespace WebApplication1 {
     
     
-    public partial class About {
+    public partial class Aplicaciones {
         
         /// <summary>
         /// Control BuscarAplicacion.

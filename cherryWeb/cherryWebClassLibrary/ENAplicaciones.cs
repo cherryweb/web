@@ -57,6 +57,11 @@ namespace cherryWebClassLibrary
             }
         }*/
 
+        static public ENAplicaciones getAplicacion(string aplicacion)
+        {
+            return AplicacionCAD.dameAplicacion(aplicacion);
+        }
+
         public string Nombre
         {
             get { return nombre; }
@@ -99,5 +104,7 @@ namespace cherryWebClassLibrary
             AplicacionCAD cad = new AplicacionCAD(this);
             return cad.nueva_aplicacion();
         }
+
+        
     }
 }

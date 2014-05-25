@@ -20,10 +20,33 @@ namespace cherryWebClassLibrary
             this.aplicacion = aplicacion;
         }
 
-        public ENAplicaciones dameAplicacion(string nombre)//VER
+        public static ENAplicaciones dameAplicacion(string nombre)//VER
         {
-            // Código para recuperar un tipo DataSet conteniendo los datos del Aplicacion.
-            return aplicacion;
+            // Código para recuperar un tipo DataSet conteniendo los datos del Cliente
+            SqlConnection conexion = new SqlConnection(cadenaconexion);//crear conexion esto es la misma            siempre para todos
+            SqlCommand consulta = new SqlCommand("SELECT NOMBRE,DESCRIPCION,CATEGORIA,PVP,USUARIO FROM APLICACIONES WHERE NOMBRE= '" + nombre + "'", conexion);
+            SqlDataAdapter adapter = new SqlDataAdapter(consulta);//obtiene los datos
+            SqlDataReader dr;
+
+            conexion.Open();
+
+            dr = consulta.ExecuteReader();
+            dr.Read();
+
+            ENAplicaciones aux = new ENAplicaciones();
+
+            aux.Nombre = dr["Nombre"].ToString();
+            aux.Descripcion = dr["Descripcion"].ToString();
+            aux.Categoria = dr["Categoria"].ToString();
+            aux.PVP = (int)dr["PVP"];
+            aux.Usuario = dr["Usuario"].ToString();
+            //aux.Boletin = (bool)dr["boletin"];
+            //aux.Foto = dr["Foto"].ToString();
+
+
+            conexion.Close();
+
+            return aux;
         }
 
         public bool nueva_aplicacion()

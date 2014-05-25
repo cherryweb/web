@@ -5,7 +5,8 @@
     <div>
         <asp:Label ID="BuscarLabel" runat="server" Text="Buscar" Height="20px"></asp:Label>
         <asp:TextBox ID="BuscarBox" runat="server" Height="20px"></asp:TextBox>
-        <asp:Button ID="BotonBuscar" runat="server" Text="Enviar" Height ="20 px"/>
+        <asp:Button ID="BotonBuscar" runat="server" Text="Enviar" Height ="20 px" 
+            onclick="BotonBuscar_Click"/>
     </div>
     <div style="height:auto; width: auto;">
           <asp:GridView ID="GridView1" Width="33%" Height="100%" style="display:inline" HeaderStyle-ForeColor="Red" AutoGenerateColumns="False" BackColor="Aqua" runat="server">

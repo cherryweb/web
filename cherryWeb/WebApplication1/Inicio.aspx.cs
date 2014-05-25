@@ -33,9 +33,16 @@ namespace WebApplication1
 
         }
 
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void BotonBuscar_Click(object sender, EventArgs e)
         {
+            string buscado;
+            buscado = BuscarBox.Text;
 
+            ENAplicaciones aplicaciones;
+
+            aplicaciones = ENAplicaciones.getAplicacion(buscado);
+
+            
         }
     }
 }
