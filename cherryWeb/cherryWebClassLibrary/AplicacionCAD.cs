@@ -7,6 +7,7 @@ namespace cherryWebClassLibrary
 {
     public class AplicacionCAD
     {
+        ENAplicaciones aplicacion;
         public AplicacionCAD(string db)
         {
             //Adquiere la cadena de conexión desde un único sitio.
@@ -15,7 +16,7 @@ namespace cherryWebClassLibrary
         public ENAplicaciones dameAplicacion(string nombre)//VER
         {
             // Código para recuperar un tipo DataSet conteniendo los datos del Aplicacion.
-
+            return aplicacion;
         }
 
         public void nueva_aplicacion(ENAplicaciones aplicacion)

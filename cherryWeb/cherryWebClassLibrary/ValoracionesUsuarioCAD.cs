@@ -5,12 +5,12 @@ using System.Text;
 
 namespace cherryWebClassLibrary
 {
-    public class ValoracionesUsuarioCAD
+    public class ValoracionUsuarioCAD
     {
-        public ValoracionesUsuarioCAD(string db)
+        /*public ValoracionesUsuarioCAD(string db)
         {
             //Adquiere la cadena de conexión desde un único sitio.
-        }
+        }*/
 
         public void nueva_valoracion(ENValoracionesUsuario valoracion)
         {

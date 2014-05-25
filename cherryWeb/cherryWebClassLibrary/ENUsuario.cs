@@ -20,16 +20,16 @@ namespace cherryWebClassLibrary
         //Datos
         private UsuarioCAD m_cc;
 
-        public ENUsuario(string a = "", string n = "", string p = "", string e = "", string ps = "", bool b = false, string i = "", string paypal = "")
+        public ENUsuario(string a = "", string n = "", string p = "", string e = "", string ps = "", bool b = false)
         {
             apodo = a;
             nombre = n;
             password = p;
-            e = email;
-            ps = pais;
-            b = boletin;
-            i = imagen;
-            p = paypal;
+            email = e;
+            pais = ps;
+            boletin = b;
+            //imagen = i;
+            //paypal = p;
         }
 
         /* public ENUsuario[] getUsuario()
@@ -37,7 +37,7 @@ namespace cherryWebClassLibrary
             
         }*/
 
-        public void nuevo_usuario()
+       /* public void nuevo_usuario()
         {
             try
             {
@@ -49,9 +49,9 @@ namespace cherryWebClassLibrary
 
                 return;
             }
-        }
+        }*/
 
-        public void borrar_usuario()
+       /* public void borrar_usuario()
         {
             try
             {
@@ -63,7 +63,7 @@ namespace cherryWebClassLibrary
 
                 return;
             }
-        }
+        }*/
 
         public string Apodo
         {
@@ -99,13 +99,20 @@ namespace cherryWebClassLibrary
         }
         public string Foto
         {
-            get { return Foto; }
-            set { Foto = value; }
+            get { return imagen; }
+            set { imagen = value; }
         }
         public string Paypal
         {
             get { return paypal; }
             set { paypal = value; }
         }
-    }
+
+        public bool commitDB()
+        {
+            // Inserta en la DB si no existe y lo actualiza si ya existía
+            UsuarioCAD cad = new UsuarioCAD(this);
+            return cad.nuevo_usuario();
+        }
+    }    
 }

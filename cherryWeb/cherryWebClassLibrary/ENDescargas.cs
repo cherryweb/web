@@ -16,7 +16,7 @@ namespace cherryWebClassLibrary
 
         DescargasCAD m_cc;
 
-        public ENDescargas(int nt = 0, string a = "", int v = "", string u = "")
+        public ENDescargas(int nt = 0, string a = "", int v = 0, string u = "")
         {
             numerototal = nt;
             aplicacion = a;

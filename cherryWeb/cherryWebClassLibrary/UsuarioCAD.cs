@@ -56,9 +56,9 @@ namespace cherryWebClassLibrary
 
         }
 
-        public void nuevo_usuario(ENUsuario usuario)
+        public bool nuevo_usuario()
         {
-            string s = "INSERT INTO USUARIOS(APODO, NOMBRE, CONTRASEÑA, EMAIL, PAIS, BOLETIN, FOTO_PERFIL) Values(@apod, @nomb, @pass, @email, @country, @bolet, @foto_per)";
+            string s = "INSERT INTO USUARIOS(APODO, NOMBRE, PASSWORD, EMAIL, PAIS, BOLETIN) Values(@apod, @nomb, @pass, @email, @country, @bolet)";
             SqlCommand cm = new SqlCommand(s, conexion);
             cm.Parameters.AddWithValue("apod", usuario.Apodo);
             cm.Parameters.AddWithValue("nomb", usuario.Nombre);
@@ -66,17 +66,18 @@ namespace cherryWebClassLibrary
             cm.Parameters.AddWithValue("email", usuario.Email);
             cm.Parameters.AddWithValue("country", usuario.Pais);
             cm.Parameters.AddWithValue("bolet", usuario.Boletin);
-            cm.Parameters.AddWithValue("foto_per", usuario.Foto);
+            //cm.Parameters.AddWithValue("foto_per", usuario.Foto);
             conexion.Open();
             cm.ExecuteNonQuery();
             conexion.Close();
+
+            return true;
         }
 
         public bool borrar_usuario()
         {
             //Código para borrar un usuario
             
-
             bool aR = false;
 
             SqlConnection conexion = new SqlConnection(cadenaconexion);

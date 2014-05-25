@@ -17,3 +17,8 @@ C:\Users\Agustin\web\cherryWeb\WebApplication1\obj\Debug\ResolveAssemblyReferenc
 C:\Users\Agustin\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Agustin\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.pdb
 C:\Users\Jorge\web\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Agustin\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.Properties.Resources.resources
+C:\Users\Agustin\web\cherryWeb\WebApplication1\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Agustin\web\cherryWeb\WebApplication1\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Agustin\web\cherryWeb\WebApplication1\bin\cherryWebClassLibrary.dll
+C:\Users\Agustin\web\cherryWeb\WebApplication1\bin\cherryWebClassLibrary.pdb

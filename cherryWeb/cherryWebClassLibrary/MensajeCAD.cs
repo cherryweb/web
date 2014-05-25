@@ -7,6 +7,8 @@ namespace cherryWebClassLibrary
 {
     public class MensajeCAD
     {
+        ENMensaje mensaje;
+
         public MensajeCAD(string db)
         {
             //Adquiere la cadena de conexión desde un único sitio.
@@ -15,6 +17,7 @@ namespace cherryWebClassLibrary
         public ENMensaje dameMensaje(ENMensaje mensaje)
         {
             // Código para recuperar un tipo DataSet conteniendo los datos del Mensaje
+            return mensaje;
 
         }
 

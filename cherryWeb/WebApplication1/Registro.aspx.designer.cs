@@ -58,22 +58,22 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label ContraseñaLabel;
         
         /// <summary>
-        /// Control ContraseñaBox.
+        /// Control ContrasenaBox.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ContraseñaBox;
+        protected global::System.Web.UI.WebControls.TextBox ContrasenaBox;
         
         /// <summary>
-        /// Control Contraseña2Label.
+        /// Control Contrasena2Label.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Contraseña2Label;
+        protected global::System.Web.UI.WebControls.Label Contrasena2Label;
         
         /// <summary>
         /// Control Contraseña2Box.
