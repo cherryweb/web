@@ -15,7 +15,7 @@
     }
         .style2
         {
-            height: 34px;
+            height: 35px;
         }
     </style>
 </asp:Content>
@@ -24,19 +24,19 @@
     <tr>
         <td class="style1" rowspan="5">
             <img alt="" src="" style="height: 89px; width: 97px" /></td>
-        <td colspan="2">
+        <td colspan="3">
             <asp:Label ID="NombreLabel" runat="server" Text="Nombre:"></asp:Label>
             <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
         </td>
     </tr>
     <tr>
-        <td colspan="2">
+        <td colspan="3">
             <asp:Label ID="DescripcionLabel" runat="server" Text="Descripción:"></asp:Label>
             <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
         </td>
     </tr>
     <tr>
-        <td colspan="2">
+        <td colspan="3">
             <asp:Label ID="PrecioLabel" runat="server" Text="Precio:"></asp:Label>
             <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
         </td>
@@ -48,27 +48,32 @@
         </td>
         <td class="style2">
             <asp:Label ID="MiValoracionLabel" runat="server" Text="Mi valoración:"></asp:Label>
-            <asp:DropDownList ID="DropDownList1" runat="server" 
-                
-                style="top: 278px; left: 679px; position: absolute; height: 22px; width: 40px">
-                <asp:ListItem>0</asp:ListItem>
-                <asp:ListItem>1</asp:ListItem>
+            <asp:DropDownList ID="ValoracionList" runat="server">
+                <asp:ListItem Selected="True">1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
                 <asp:ListItem>3</asp:ListItem>
                 <asp:ListItem>4</asp:ListItem>
                 <asp:ListItem>5</asp:ListItem>
-                <asp:ListItem>6</asp:ListItem>
-                <asp:ListItem>7</asp:ListItem>
-                <asp:ListItem>8</asp:ListItem>
-                <asp:ListItem>9</asp:ListItem>
-                <asp:ListItem>10</asp:ListItem>
-                <asp:ListItem></asp:ListItem>
             </asp:DropDownList>
         </td>
+        <td class="style2">
+            &nbsp;</td>
     </tr>
     <tr>
+            
+
+        <td style="text-align: center">
+         <asp:Label ID="Label1" runat="server" Text="Diseñador: "></asp:Label>
+        <asp:Label ID="duenyo" runat="server" Text=""
+               onclick="label_Click" />
+            <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Button" />
+        </td>
+            
+
         <td colspan="2" style="text-align: center">
-            <asp:Button ID="BotonDescargar" runat="server" Text="DESCARGAR" />
+            <asp:Button ID="BotonDescargar" runat="server" Text="DESCARGAR" 
+                onclick="BotonDescargar_Click" />
+                <asp:Label ID="LabelError" runat="server" Text=""></asp:Label>
         </td>
     </tr>
 </table>

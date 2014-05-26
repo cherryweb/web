@@ -12,3 +12,15 @@ C:\Users\Agustin\web\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLib
 C:\Users\Agustin\web\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.dll.config
 C:\Users\Agustin\web\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.dll
 C:\Users\Agustin\web\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.pdb
+C:\Users\Sergio\Desktop\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.dll.config
+C:\Users\Sergio\Desktop\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.dll
+C:\Users\Sergio\Desktop\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.pdb
+C:\Users\Sergio\Desktop\cherryWeb\cherryWebClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLibrary.dll
+C:\Users\Sergio\Desktop\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLibrary.pdb
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.dll.config
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.dll
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.pdb
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\cherryWebClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLibrary.dll
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLibrary.pdb

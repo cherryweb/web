@@ -49,7 +49,8 @@
          
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          
-            <asp:Button ID="Button1" runat="server" Text="Ver App" Width="98px" />
+            <asp:Button ID="Button1" runat="server" Text="Ver App" Width="98px" 
+            onclick="Button1_Click" />
 
 
 

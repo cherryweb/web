@@ -34,15 +34,16 @@ namespace cherryWebClassLibrary
             dr.Read();
 
             ENAplicaciones aux = new ENAplicaciones();
+            
 
-            aux.Nombre = dr["Nombre"].ToString();
-            aux.Descripcion = dr["Descripcion"].ToString();
-            aux.Categoria = dr["Categoria"].ToString();
-            aux.PVP = (int)dr["PVP"];
-            aux.Usuario = dr["Usuario"].ToString();
-            //aux.Boletin = (bool)dr["boletin"];
-            //aux.Foto = dr["Foto"].ToString();
-
+                aux.Nombre = dr["Nombre"].ToString();
+                aux.Descripcion = dr["Descripcion"].ToString();
+                aux.Categoria = dr["Categoria"].ToString();
+                aux.PVP = (int)dr["PVP"];
+                aux.Usuario = dr["Usuario"].ToString();
+                //aux.Boletin = (bool)dr["boletin"];
+                //aux.Foto = dr["Foto"].ToString();
+            
 
             conexion.Close();
 

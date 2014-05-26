@@ -29,8 +29,17 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (((ENUsuario)Session["Usuario"]) != null)
+           if (((ENUsuario)Session["Usuario"]) != null)
                 usuarioActual = ((ENUsuario)Session["Usuario"]);
+
+            ENUsuario user;
+
+            user = ENUsuario.getUsuario(Request.QueryString["id"]);
+
+            LApodo2.Text = user.Apodo;
+            LContacto2.Text = user.Email;
+            LPais2.Text = user.Pais;
+           
         }
     }
 }

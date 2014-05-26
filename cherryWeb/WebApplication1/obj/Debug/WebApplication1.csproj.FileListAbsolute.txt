@@ -22,3 +22,23 @@ C:\Users\Agustin\web\cherryWeb\WebApplication1\obj\Debug\GenerateResource.read.1
 C:\Users\Agustin\web\cherryWeb\WebApplication1\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\Agustin\web\cherryWeb\WebApplication1\bin\cherryWebClassLibrary.dll
 C:\Users\Agustin\web\cherryWeb\WebApplication1\bin\cherryWebClassLibrary.pdb
+C:\Users\Sergio\Desktop\cherryWeb\WebApplication1\bin\WebApplication1.dll
+C:\Users\Sergio\Desktop\cherryWeb\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Sergio\Desktop\cherryWeb\WebApplication1\bin\cherryWebClassLibrary.dll
+C:\Users\Sergio\Desktop\cherryWeb\WebApplication1\bin\cherryWebClassLibrary.pdb
+C:\Users\Sergio\Desktop\cherryWeb\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\cherryWeb\WebApplication1\obj\Debug\WebApplication1.Properties.Resources.resources
+C:\Users\Sergio\Desktop\cherryWeb\WebApplication1\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Sergio\Desktop\cherryWeb\WebApplication1\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Sergio\Desktop\cherryWeb\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Sergio\Desktop\cherryWeb\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\WebApplication1\bin\WebApplication1.dll
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\WebApplication1\bin\cherryWebClassLibrary.dll
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\WebApplication1\bin\cherryWebClassLibrary.pdb
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\WebApplication1\obj\Debug\WebApplication1.Properties.Resources.resources
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\WebApplication1\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\WebApplication1\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Raul\Desktop\cherry WEB 2.0\cherryWeb\WebApplication1\obj\Debug\WebApplication1.pdb

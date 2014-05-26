@@ -38,19 +38,21 @@ namespace cherryWebClassLibrary
 
             conexion.Open();
 
-            dr = consulta.ExecuteReader();
-            dr.Read();
-
+            
+  
             ENUsuario aux = new ENUsuario();
 
+            dr = consulta.ExecuteReader();
+            dr.Read();
+           
             aux.Apodo = dr["Apodo"].ToString();
             aux.Nombre = dr["Nombre"].ToString();
             aux.Email = dr["Email"].ToString();
             aux.Pais = dr["Pais"].ToString();
             aux.Password = dr["Password"].ToString();
             aux.Boletin = (bool)dr["boletin"];
-            //aux.Foto = dr["Foto"].ToString();
-
+                //aux.Foto = dr["Foto"].ToString();
+            
 
             conexion.Close();
 

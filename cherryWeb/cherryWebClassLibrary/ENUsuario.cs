@@ -119,7 +119,5 @@ namespace cherryWebClassLibrary
             UsuarioCAD cad = new UsuarioCAD(this);
             return cad.nuevo_usuario();
         }
-
-       
     }    
 }

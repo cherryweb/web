@@ -22,7 +22,13 @@ namespace cherryWebClassLibrary
             aplicacion = n;
         }
 
-        public void nueva_valoracion()
+        public bool valorar()
+        {
+            ValoracionesUsuarioCAD cad = new ValoracionesUsuarioCAD(this);
+            return cad.nueva_valoracion();
+        }
+
+       /* public void nueva_valoracion()
         {
             try
             {
@@ -34,7 +40,7 @@ namespace cherryWebClassLibrary
 
                 return;
             }
-        }
+        }*/
 
         public int Valoracion
         {
