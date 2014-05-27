@@ -28,12 +28,10 @@
                         <asp:MenuItem NavigateUrl="~/Inicio.aspx" Text="Inicio" Value="Inicio"/>
                         <asp:MenuItem Text="Aplicaciones" Value="Aplicaciones" 
                             NavigateUrl="~/Aplicaciones.aspx"></asp:MenuItem>
-                        <asp:MenuItem Text="Màs votados" Value="Màs votados" 
-                            NavigateUrl="~/Aplicaciones.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Más votados" Value="Más votados" 
+                            NavigateUrl="~/masVotadas.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Más descargadas" Value="Más descargadas" 
-                            NavigateUrl="~/Aplicaciones.aspx"/>
-                        <asp:MenuItem Text="Nuevas Apps" Value="Nuevas Apps" 
-                            NavigateUrl="~/Aplicaciones.aspx"></asp:MenuItem>
+                            NavigateUrl="~/masDescargas.aspx"/>
                         <asp:MenuItem Text="Iniciar Sesion" Value="Iniciar Sesion" 
                             NavigateUrl="~/InicioSesion.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Registro" Value="Registro" NavigateUrl="~/Registro.aspx"></asp:MenuItem>

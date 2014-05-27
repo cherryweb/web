@@ -10,87 +10,60 @@
 namespace WebApplication1 {
     
     
-    public partial class MiPerfil {
+    public partial class masDescargas {
         
         /// <summary>
-        /// Control LApodo.
+        /// Control LabelNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LApodo;
+        protected global::System.Web.UI.WebControls.Label LabelNombre;
         
         /// <summary>
-        /// Control LApodo2.
+        /// Control BusquedaAplicacion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LApodo2;
+        protected global::System.Web.UI.WebControls.TextBox BusquedaAplicacion;
         
         /// <summary>
-        /// Control LContacto.
+        /// Control BotonBuscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LContacto;
+        protected global::System.Web.UI.WebControls.Button BotonBuscar;
         
         /// <summary>
-        /// Control LContacto2.
+        /// Control LabelError.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LContacto2;
+        protected global::System.Web.UI.WebControls.Label LabelError;
         
         /// <summary>
-        /// Control LPais.
+        /// Control GridView3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LPais;
+        protected global::System.Web.UI.WebControls.GridView GridView3;
         
         /// <summary>
-        /// Control LPais2.
+        /// Control MasDescargadas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LPais2;
-        
-        /// <summary>
-        /// Control LFacebook.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LFacebook;
-        
-        /// <summary>
-        /// Control LFacebook2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LFacebook2;
-        
-        /// <summary>
-        /// Control GridView1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.SqlDataSource MasDescargadas;
     }
 }

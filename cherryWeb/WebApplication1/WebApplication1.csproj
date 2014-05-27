@@ -70,6 +70,8 @@
     <Content Include="Imagenes\visit-korea-app.png" />
     <Content Include="Inicio.aspx" />
     <Content Include="InicioSesion.aspx" />
+    <Content Include="masDescargas.aspx" />
+    <Content Include="masVotadas.aspx" />
     <Content Include="MiPerfil.aspx" />
     <Content Include="PerfilApp.aspx" />
     <Content Include="PerfilUsuario.aspx" />
@@ -125,6 +127,20 @@
     </Compile>
     <Compile Include="Aplicaciones.aspx.designer.cs">
       <DependentUpon>Aplicaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masDescargas.aspx.cs">
+      <DependentUpon>masDescargas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masDescargas.aspx.designer.cs">
+      <DependentUpon>masDescargas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masVotadas.aspx.cs">
+      <DependentUpon>masVotadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masVotadas.aspx.designer.cs">
+      <DependentUpon>masVotadas.aspx</DependentUpon>
     </Compile>
     <Compile Include="MiPerfil.aspx.cs">
       <DependentUpon>MiPerfil.aspx</DependentUpon>

@@ -10,23 +10,26 @@ namespace cherryWebClassLibrary
         private int _ID;
         private string emisor;
         private string receptor;
-        private DateTime fecha_hora;
         private string mensaje;
 
         //Datos
 
-        private MensajeCAD m_cc;
+        //private MensajeCAD m_cc;
 
-        public ENMensaje(DateTime d, int i = 0, string a1 = "", string a2 = "", string m = "")
+        public ENMensaje(string emi, string mens)
         {
-            _ID = i;
+            emisor = emi;
+            mensaje = mens;
+        }
+
+        public ENMensaje(string a1 = "", string a2 = "", string m = "")
+        {
             emisor = a1;
             receptor = a2;
-            fecha_hora = d;
             mensaje = m;
         }
 
-        public void nuevo_mensaje()
+       /* public void nuevo_mensaje()
         {
             try
             {
@@ -38,9 +41,21 @@ namespace cherryWebClassLibrary
 
                 return;
             }
+        }*/
+
+        public bool nuevoMensaje()
+        {
+            MensajeCAD cad = new MensajeCAD(this);
+            return cad.nuevo_mensaje();
         }
 
-        public void borrar_mensaje()
+        public List<ENMensaje> dameMensajes(string receptor)
+        {
+            MensajeCAD cad = new MensajeCAD(this);
+            return cad.dame_mensajes(receptor);
+        }
+
+        /*public void borrar_mensaje()
         {
             try
             {
@@ -52,7 +67,7 @@ namespace cherryWebClassLibrary
 
                 return;
             }
-        }
+        }*/
 
         public int ID
         {
@@ -69,11 +84,7 @@ namespace cherryWebClassLibrary
             get { return receptor; }
             set { receptor = value; }
         }
-        public DateTime Fecha_hora
-        {
-            get { return fecha_hora; }
-            set { fecha_hora = value; }
-        }
+        
         public string Mensaje
         {
             get { return mensaje; }

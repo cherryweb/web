@@ -30,36 +30,7 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
 
         }
-
-       // private Aplicaciones apps;
-
-        protected void BotonBuscar_Click(object sender, EventArgs e) 
-        {
-            string buscado;
-            buscado = BuscarBox.Text;
-
-            ENAplicaciones aplicaciones;
-
-                try
-                {
-                    bool esApp = true;
-
-                    if (!esApp)
-                        throw new Exception("No existe la App");
-                    else
-                    {
-                        aplicaciones = ENAplicaciones.getAplicacion(buscado);
-                        
-                        Response.Redirect("PerfilApp.aspx?id=" + aplicaciones.Nombre);
-                    }
-                }
-                catch (Exception a) { LabelError.Text = a.Message; }
-
-        }
-
- 
     }
 }

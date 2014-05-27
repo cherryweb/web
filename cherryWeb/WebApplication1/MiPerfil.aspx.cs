@@ -11,7 +11,7 @@ namespace WebApplication1
     public partial class MiPerfil : System.Web.UI.Page
     {
         protected ENUsuario usuarioActual = null;
-
+        protected ENMensaje mens;
         protected override void OnPreInit(EventArgs e)
         {
             if (((ENUsuario)Session["Usuario"]) != null)
@@ -29,9 +29,18 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            LApodo2.Text = ((ENUsuario)Session["Usuario"]).Apodo;
-            LContacto2.Text = ((ENUsuario)Session["Usuario"]).Email;
-            LPais2.Text = ((ENUsuario)Session["Usuario"]).Pais;
+            LApodo2.Text = usuarioActual.Apodo;
+            LContacto2.Text = usuarioActual.Email;
+            LPais2.Text = usuarioActual.Pais;
+
+            mens = new ENMensaje();
+            List<ENMensaje> mensajes;
+
+            mensajes = mens.dameMensajes(usuarioActual.Apodo);
+
+            this.GridView1.DataSource = mensajes;
+            GridView1.DataBind();
+
         }
     }
 }

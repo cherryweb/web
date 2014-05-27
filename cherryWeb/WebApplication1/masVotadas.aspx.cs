@@ -8,9 +8,8 @@ using cherryWebClassLibrary;
 
 namespace WebApplication1
 {
-    public partial class Aplicaciones : System.Web.UI.Page
+    public partial class masVotadas : System.Web.UI.Page
     {
-
         protected ENUsuario usuarioActual;
 
         protected override void OnPreInit(EventArgs e)
@@ -50,6 +49,5 @@ namespace WebApplication1
             }
             catch (Exception a) { LabelError.Text = a.Message; }
         }
-
     }
 }

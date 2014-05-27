@@ -1,5 +1,4 @@
-﻿<%@ Page Title="Aplicaciones" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
-    CodeBehind="Aplicaciones.aspx.cs" Inherits="WebApplication1.Aplicaciones" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.master" CodeBehind="masVotadas.aspx.cs" Inherits="WebApplication1.masVotadas" %>
 
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
        
@@ -8,9 +7,11 @@
 
          <asp:Label ID="LabelNombre" runat="server" Text="Buscar: "></asp:Label>
         <asp:TextBox ID="BusquedaAplicacion" runat="server" Width="164px"></asp:TextBox>
+
         
         <asp:Button ID="BotonBuscar" runat="server" Text="Enviar" Height ="20 px" 
             onclick="BotonBuscar_Click"/>
+
     </div>
     
     <div class="centrado">

@@ -47,7 +47,9 @@ namespace WebApplication1
 
             Label6.Text = aplicaciones.Descripcion;
 
-            Label7.Text = "Hola";
+            Label7.Text = aplicaciones.PVP.ToString();
+
+            Label8.Text = ENValoracionesUsuario.getValoracion(aplicaciones.Nombre).ToString();
 
             duenyo.Text = aplicaciones.Usuario;
             Button1.Text = "Ver perfil";
@@ -76,6 +78,8 @@ namespace WebApplication1
                 ENValoracionesUsuario valoracion = new ENValoracionesUsuario((Convert.ToInt32(ValoracionList.Text)), usuarioActual.Apodo, Label5.Text);
 
                 valoracion.valorar();
+
+                Response.Redirect("PerfilApp.aspx?id=" + valoracion.Aplicacion);
 
             }
             catch (Exception ex) { LabelError.Text = "Tienes que iniciar sesión"; }

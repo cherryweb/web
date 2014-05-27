@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PerfilUsuario.aspx.cs" Inherits="WebApplication1.PerfilUsuario" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" CodeBehind="PerfilUsuario.aspx.cs" Inherits="WebApplication1.PerfilUsuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style type="text/css">
     .style1
@@ -45,7 +45,14 @@
     </tr>
     <tr>
         <td colspan="2">
-            &nbsp;</td>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns = "False" 
+                Height= "100%" Width = "100%" >
+            </asp:GridView>
+            <asp:TextBox ID="Mensajes" runat="server" Height= "100%" Width = "80%"></asp:TextBox>
+            <asp:Button ID="BotonMensajes" runat="server" Text="Enviar" 
+                onclick="BotonMensajes_Click" />
+            <br />
+        </td>
     </tr>
 </table>
 </asp:Content>

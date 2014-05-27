@@ -13,22 +13,13 @@ namespace WebApplication1 {
     public partial class Aplicaciones {
         
         /// <summary>
-        /// Control BuscarAplicacion.
+        /// Control LabelNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label BuscarAplicacion;
-        
-        /// <summary>
-        /// Control CategoriasAplicacion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList CategoriasAplicacion;
+        protected global::System.Web.UI.WebControls.Label LabelNombre;
         
         /// <summary>
         /// Control BusquedaAplicacion.
@@ -40,75 +31,39 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.TextBox BusquedaAplicacion;
         
         /// <summary>
-        /// Control LabelNombreApp.
+        /// Control BotonBuscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelNombreApp;
+        protected global::System.Web.UI.WebControls.Button BotonBuscar;
         
         /// <summary>
-        /// Control TextNombreAPP.
+        /// Control LabelError.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextNombreAPP;
+        protected global::System.Web.UI.WebControls.Label LabelError;
         
         /// <summary>
-        /// Control ImageApp.
+        /// Control GridView3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImageApp;
+        protected global::System.Web.UI.WebControls.GridView GridView3;
         
         /// <summary>
-        /// Control LDescripApp.
+        /// Control SqlDataSource1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LDescripApp;
-        
-        /// <summary>
-        /// Control TDescripApp.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TDescripApp;
-        
-        /// <summary>
-        /// Control Button1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-        
-        /// <summary>
-        /// Control Label2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
-        
-        /// <summary>
-        /// Control Label3.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

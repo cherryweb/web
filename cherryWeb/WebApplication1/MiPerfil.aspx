@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="MiPerfil.aspx.cs" Inherits="WebApplication1.MiPerfil" %>
+﻿<%@ Page Language="C#"  MasterPageFile="~/Site.Master" CodeBehind="MiPerfil.aspx.cs" Inherits="WebApplication1.MiPerfil" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <style type="text/css">
     .style1
@@ -45,7 +45,9 @@
     </tr>
     <tr>
         <td colspan="2">
-            &nbsp;</td>
+            <asp:GridView ID="GridView1" runat="server" Height= "100%" Width = "100%">
+            </asp:GridView>
+        </td>
     </tr>
 </table>
 </asp:Content>

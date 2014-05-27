@@ -28,6 +28,11 @@ namespace cherryWebClassLibrary
             return cad.nueva_valoracion();
         }
 
+        static public int getValoracion(string aplicacion)
+        {
+            return ValoracionesUsuarioCAD.get_valoracion(aplicacion);
+        }
+
        /* public void nueva_valoracion()
         {
             try

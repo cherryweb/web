@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace cherryWebClassLibrary
 {
@@ -9,9 +11,13 @@ namespace cherryWebClassLibrary
     {
         ENMensaje mensaje;
 
-        public MensajeCAD(string db)
+        private const string cadenaconexion = "data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\Database.mdf;User Instance=true";
+        SqlConnection conexion = new SqlConnection(cadenaconexion);//crear conexion esto es la misma  
+
+        public MensajeCAD(ENMensaje mensaje)
         {
             //Adquiere la cadena de conexión desde un único sitio.
+            this.mensaje = mensaje;
         }
 
         public ENMensaje dameMensaje(ENMensaje mensaje)
@@ -21,10 +27,45 @@ namespace cherryWebClassLibrary
 
         }
 
-        public void nuevo_mensaje(ENMensaje mensaje)
+        public bool nuevo_mensaje()
         {
+            bool aR = false;
             //Código para crear un nuevo mensaje
-            string orden = "INSERT INTO MENSAJE VALUES('" + mensaje.ID + "', " + mensaje.Fecha_hora + "', " + mensaje.Mensaje + "', " + mensaje.Emisor + "', " + mensaje.Receptor + "')";
+            SqlConnection conexion = new SqlConnection(cadenaconexion);
+            conexion.Open();
+
+            string orden = "INSERT INTO MENSAJE VALUES('" + mensaje.Mensaje + "', '" + mensaje.Emisor + "', '" + mensaje.Receptor + "')";
+
+            SqlCommand com2 = new SqlCommand(orden, conexion);
+
+            if (com2.ExecuteNonQuery() > 0)
+                aR = true;
+
+            conexion.Close();
+
+            return aR;
+        }
+
+        public List<ENMensaje> dame_mensajes(string receptor)
+        {
+            List<ENMensaje> mensajes = new List<ENMensaje>();
+
+            SqlConnection c = new SqlConnection(cadenaconexion);
+            c.Open();
+            string comando = "Select emisor ,mensaje from mensaje where receptor = '" + receptor + "'";
+            SqlCommand com = new SqlCommand(comando, c);
+            SqlDataAdapter adapter = new SqlDataAdapter(com);
+            SqlDataReader dr = com.ExecuteReader();
+
+            while (dr.Read())
+            {
+                mensajes.Add(new ENMensaje(dr["emisor"].ToString(), dr["mensaje"].ToString()));
+            }
+
+            dr.Close();
+            c.Close();
+
+            return mensajes;
         }
 
         public void borrar_mensaje(int id)
