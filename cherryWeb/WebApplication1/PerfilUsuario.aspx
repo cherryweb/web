@@ -41,18 +41,13 @@
         <td>
             <asp:Label ID="LFacebook" runat="server" Text="<b>Facebook:</b>"></asp:Label>
             <asp:Label ID="LFacebook2" runat="server" Text=""></asp:Label>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns = "False" 
-                Height= "100%" Width = "100%" >
+            <asp:GridView ID="GridView1" runat="server" Height = "100%" Width = "100%">
             </asp:GridView>
-            <asp:TextBox ID="Mensajes" runat="server" Height= "100%" Width = "80%"></asp:TextBox>
-            <asp:Button ID="BotonMensajes" runat="server" Text="Enviar" 
-                onclick="BotonMensajes_Click" />
-            <br />
+            <asp:TextBox ID="MensajeBox" runat="server" style="margin-bottom: 0px" width = "80%"></asp:TextBox>
+            <asp:Button ID="BotonMensaje" runat="server" Text="Enviar" 
+                onclick="BotonMensaje_Click" />
         </td>
     </tr>
+   
 </table>
 </asp:Content>

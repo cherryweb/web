@@ -41,19 +41,23 @@ namespace WebApplication1
             LContacto2.Text = user.Email;
             LPais2.Text = user.Pais;
 
-            mensajes = mens.dameMensajes(user.Apodo);
+            mens = new ENMensaje();
 
-            this.GridView1.DataSource = mensajes;
-            GridView1.DataBind();
+           mensajes = mens.dameMensajes(user.Apodo);
+
+           this.GridView1.DataSource = mensajes;
+           GridView1.DataBind();
         }
 
-        protected void BotonMensajes_Click(object sender, EventArgs e)
+        protected void BotonMensaje_Click(object sender, EventArgs e)
         {
-            string mensaje = Mensajes.Text;
+            string mensaje = MensajeBox.Text;
 
-            ENMensaje msg = new ENMensaje(usuarioActual.Apodo,LApodo2.Text,mensaje);
+            ENMensaje msg = new ENMensaje(usuarioActual.Apodo, LApodo2.Text, mensaje);
 
             msg.nuevoMensaje();
         }
+
+      
     }
 }
