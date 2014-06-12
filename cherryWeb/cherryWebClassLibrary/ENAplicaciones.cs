@@ -15,52 +15,24 @@ namespace cherryWebClassLibrary
         private string imagen;
         private string usuario;
 
-        //Datos
-        private AplicacionCAD m_cc;
-
-        public ENAplicaciones(string n = "", string c = "", string d = "", string u="", float pv = 0)
+        public ENAplicaciones(string n = "", string c = "", string d = "", string u="", float pv = 0, string i = "")
         {
             nombre = n;
             descripcion = d;
             categoria = c;
-            //imagen = i;
+            imagen = i;
             //peso = p;
             usuario = u;
             _PVP = pv;
         }
 
-        /*public void nueva_aplicacion()
-        {
-            try
-            {
-                m_cc = new AplicacionCAD("../webdb");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error creando usuario");
-
-                return;
-            }
-        }*/
-
-        /*public void borrar_aplicacion()
-        {
-            try
-            {
-                m_cc = new AplicacionCAD("../webdb");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error borrando usuario");
-
-                return;
-            }
-        }*/
-
+        //Devuelve el objeto aplicación
         static public ENAplicaciones getAplicacion(string aplicacion)
         {
             return AplicacionCAD.dameAplicacion(aplicacion);
         }
+
+        //Getters/setters 
 
         public string Nombre
         {
@@ -98,9 +70,10 @@ namespace cherryWebClassLibrary
             set { usuario = value; }
         }
 
+
         public bool commitDB()
         {
-            // Inserta en la DB si no existe y lo actualiza si ya existía
+            // Inserta en la DB si no existe llamando al CAD de la aplicación, o lo actualiza si ya existía
             AplicacionCAD cad = new AplicacionCAD(this);
             return cad.nueva_aplicacion();
         }

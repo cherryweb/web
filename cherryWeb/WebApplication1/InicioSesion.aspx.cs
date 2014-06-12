@@ -12,7 +12,7 @@ namespace WebApplication1
     {
 
         protected ENUsuario usuarioActual = null;
-
+        //Comprueba si el usuario esta logueado y le asigna una página maestra.
         protected override void OnPreInit(EventArgs e)
         {
             if (((ENUsuario)Session["Usuario"]) != null)
@@ -28,26 +28,28 @@ namespace WebApplication1
             }
         }
 
-       /* void _Default_Init(object sender, EventArgs e)
-        {
-            
-        }*/
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (((ENUsuario)Session["Usuario"]) != null)
                 usuarioActual = ((ENUsuario)Session["Usuario"]);
+
+            InicioPass.TextMode = TextBoxMode.Password;
+            InicioPass.TextMode = TextBoxMode.Password;
         }
 
+        //Iniciar sesión.
         protected void BotonIniciar_Click(object sender, EventArgs e)
         {
+            //Comprueba que el usuario que se esta intentando loguear existe con ese Apodo y esa contraseña.
             try
             {
-                bool esUsuario = true;
+                bool existe = true;
 
-                if (!esUsuario)
-                    throw new Exception("El usuario no existe con esa contraseña");
-                else
+                existe = ENUsuario.esUsuario(InicioNom.Text, InicioPass.Text);
+
+                if (!existe)
+                    throw new Exception("El usuario no existe con esa contraseña");//Si no exisste el usuario lanza error.
+                else//Si existe el usuario crea la sesión.
                 {
                     Session["Usuario"] = ENUsuario.getUsuario(InicioNom.Text);
                     Response.Redirect("inicio.aspx");

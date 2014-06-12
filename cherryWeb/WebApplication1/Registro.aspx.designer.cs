@@ -13,6 +13,15 @@ namespace WebApplication1 {
     public partial class About {
         
         /// <summary>
+        /// Control ErrorLb.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ErrorLb;
+        
+        /// <summary>
         /// Control UsuarioLabel.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace WebApplication1 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox UsuarioBox;
+        
+        /// <summary>
+        /// Control ErrorApodo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ErrorApodo;
         
         /// <summary>
         /// Control NombreLabel.
@@ -76,13 +94,22 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label Contrasena2Label;
         
         /// <summary>
-        /// Control Contraseña2Box.
+        /// Control Contrasena2Box.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Contraseña2Box;
+        protected global::System.Web.UI.WebControls.TextBox Contrasena2Box;
+        
+        /// <summary>
+        /// Control ErrorContrasena.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ErrorContrasena;
         
         /// <summary>
         /// Control EmailLabel.
@@ -101,6 +128,15 @@ namespace WebApplication1 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox EmailBox;
+        
+        /// <summary>
+        /// Control ErrorEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ErrorEmail;
         
         /// <summary>
         /// Control TwitterLabel.
@@ -137,24 +173,6 @@ namespace WebApplication1 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox FacebookBox;
-        
-        /// <summary>
-        /// Control TuentiLabel.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TuentiLabel;
-        
-        /// <summary>
-        /// Control TuentiBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TuentiBox;
         
         /// <summary>
         /// Control PaísLabel.

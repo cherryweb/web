@@ -10,34 +10,70 @@
 namespace WebApplication1 {
     
     
-    public partial class PerfilUsuario {
+    public partial class EditarPerfil {
         
         /// <summary>
-        /// Control ImagenPerfil.
+        /// Control Editar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image ImagenPerfil;
+        protected global::System.Web.UI.WebControls.Label Editar;
         
         /// <summary>
-        /// Control LApodo.
+        /// Control NombreLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LApodo;
+        protected global::System.Web.UI.WebControls.Label NombreLabel;
         
         /// <summary>
-        /// Control LApodo2.
+        /// Control NombreBox.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LApodo2;
+        protected global::System.Web.UI.WebControls.TextBox NombreBox;
+        
+        /// <summary>
+        /// Control Contrasena.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Contrasena;
+        
+        /// <summary>
+        /// Control ContrasenaBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ContrasenaBox;
+        
+        /// <summary>
+        /// Control ContrasenaRepetir.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ContrasenaRepetir;
+        
+        /// <summary>
+        /// Control ContrasenaRepetirBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ContrasenaRepetirBox;
         
         /// <summary>
         /// Control LContacto.
@@ -49,13 +85,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label LContacto;
         
         /// <summary>
-        /// Control LContacto2.
+        /// Control ContactoBox.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LContacto2;
+        protected global::System.Web.UI.WebControls.TextBox ContactoBox;
         
         /// <summary>
         /// Control LPais.
@@ -67,31 +103,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label LPais;
         
         /// <summary>
-        /// Control LPais2.
+        /// Control DespPaises.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LPais2;
-        
-        /// <summary>
-        /// Control TwitterLabel.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TwitterLabel;
-        
-        /// <summary>
-        /// Control TwitterInfo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TwitterInfo;
+        protected global::System.Web.UI.WebControls.DropDownList DespPaises;
         
         /// <summary>
         /// Control LFacebook.
@@ -103,48 +121,57 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label LFacebook;
         
         /// <summary>
-        /// Control LFacebook2.
+        /// Control FacebookBox.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LFacebook2;
+        protected global::System.Web.UI.WebControls.TextBox FacebookBox;
         
         /// <summary>
-        /// Control GridView1.
+        /// Control LTwitter.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.Label LTwitter;
         
         /// <summary>
-        /// Control MensajeBox.
+        /// Control TwitterBox.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MensajeBox;
+        protected global::System.Web.UI.WebControls.TextBox TwitterBox;
         
         /// <summary>
-        /// Control BotonMensaje.
+        /// Control SubirImgLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BotonMensaje;
+        protected global::System.Web.UI.WebControls.Label SubirImgLabel;
         
         /// <summary>
-        /// Control ErrorMsg.
+        /// Control ImgBox.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ErrorMsg;
+        protected global::System.Web.UI.WebControls.FileUpload ImgBox;
+        
+        /// <summary>
+        /// Control Confirmar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Confirmar;
     }
 }

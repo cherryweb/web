@@ -15,6 +15,7 @@ namespace cherryWebClassLibrary
 
         private ValoracionesUsuarioCAD m_cc;
 
+        //Constructor
         public ENValoracionesUsuario(int v = 0, string a = "", string n = "")
         {
             valoracion = v;
@@ -22,31 +23,20 @@ namespace cherryWebClassLibrary
             aplicacion = n;
         }
 
+        //Funcion que llama a ValoracionesUsuarioCAD para valorar una App
         public bool valorar()
         {
             ValoracionesUsuarioCAD cad = new ValoracionesUsuarioCAD(this);
             return cad.nueva_valoracion();
         }
-
+        
+        //Funcion que devuelve la valoracion de una App
         static public int getValoracion(string aplicacion)
         {
             return ValoracionesUsuarioCAD.get_valoracion(aplicacion);
         }
 
-       /* public void nueva_valoracion()
-        {
-            try
-            {
-                m_cc = new ValoracionesUsuarioCAD("../webdb");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error creando usuario");
-
-                return;
-            }
-        }*/
-
+        
         public int Valoracion
         {
             get { return valoracion; }

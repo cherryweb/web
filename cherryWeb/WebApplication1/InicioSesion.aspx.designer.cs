@@ -22,15 +22,6 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.TextBox InicioNom;
         
         /// <summary>
-        /// Control LabelError.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelError;
-        
-        /// <summary>
         /// Control InicioPass.
         /// </summary>
         /// <remarks>
@@ -49,30 +40,12 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Button BotonIniciar;
         
         /// <summary>
-        /// Control Label1.
+        /// Control LabelError.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
-        /// Control NomRecuperarPass.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NomRecuperarPass;
-        
-        /// <summary>
-        /// Control BotonEnviar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BotonEnviar;
+        protected global::System.Web.UI.WebControls.Label LabelError;
     }
 }

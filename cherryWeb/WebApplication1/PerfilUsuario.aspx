@@ -19,7 +19,8 @@
     <table style="width:100%;">
     <tr>
         <td class="style1" rowspan="5" >
-            <img alt="" src="Imagenes/chendilon.png" style="height: 240px; width: 200px" /></td>
+            <asp:Image ID="ImagenPerfil" runat="server" Height="300px" Width="300px" />
+        </td>
         <td style="width:50%" colspan="2">
             <asp:Label ID="LApodo" runat="server" Text="<b>Apodo:</b>" ></asp:Label>
             <asp:Label ID="LApodo2" runat="server" Text=""></asp:Label>
@@ -37,15 +38,31 @@
             <asp:Label ID="LPais2" runat="server" Text=""></asp:Label>
         </td>
     </tr>
+
     <tr>
-        <td>
+        <td colspan="2">
+            <asp:Label ID="TwitterLabel" runat="server" Text="<b>Twitter:</b>"></asp:Label>
+            <asp:Label ID="TwitterInfo" runat="server" Text=""></asp:Label>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
             <asp:Label ID="LFacebook" runat="server" Text="<b>Facebook:</b>"></asp:Label>
             <asp:Label ID="LFacebook2" runat="server" Text=""></asp:Label>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            
             <asp:GridView ID="GridView1" runat="server" Height = "100%" Width = "100%">
             </asp:GridView>
             <asp:TextBox ID="MensajeBox" runat="server" style="margin-bottom: 0px" width = "80%"></asp:TextBox>
             <asp:Button ID="BotonMensaje" runat="server" Text="Enviar" 
                 onclick="BotonMensaje_Click" />
+            <br />
+            <asp:Label ID="ErrorMsg" runat="server" Text=""></asp:Label>
         </td>
     </tr>
    

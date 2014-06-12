@@ -23,20 +23,16 @@
                AutoGenerateColumns="False"  
               runat="server" DataSourceID="SqlDataSource1">
             <Columns>
-            
-                      
-                  <asp:BoundField DataField="aplicacion" HeaderText="aplicacion" 
-                      SortExpression="aplicacion" />
-                  <asp:BoundField DataField="valoracion" HeaderText="valoracion" ReadOnly="True" 
-                      SortExpression="valoracion" />
+                  <asp:BoundField DataField="APLICACIONES" HeaderText="APLICACIONES" 
+                      SortExpression="APLICACIONES" />
               </Columns>
             </asp:GridView>
      
       
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-              ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT        aplicacion, AVG(valoracion) AS valoracion
-FROM            Valoraciones
-GROUP BY aplicacion"></asp:SqlDataSource>
+              ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT        nombre AS Aplicaciones
+FROM            Aplicaciones
+GROUP BY nombre"></asp:SqlDataSource>
      </div>    
 </asp:Content>
 

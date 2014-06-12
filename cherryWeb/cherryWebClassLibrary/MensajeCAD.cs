@@ -27,6 +27,7 @@ namespace cherryWebClassLibrary
 
         }
 
+       
         public bool nuevo_mensaje()
         {
             bool aR = false;
@@ -37,7 +38,7 @@ namespace cherryWebClassLibrary
             string orden = "INSERT INTO MENSAJE VALUES('" + mensaje.Mensaje + "', '" + mensaje.Emisor + "', '" + mensaje.Receptor + "')";
 
             SqlCommand com2 = new SqlCommand(orden, conexion);
-
+            //Comprobamos que que devuelve un mensaje
             if (com2.ExecuteNonQuery() > 0)
                 aR = true;
 
@@ -46,17 +47,18 @@ namespace cherryWebClassLibrary
             return aR;
         }
 
+        //Funcion que devuelve una lista de mensajes.
         public List<ENMensaje> dame_mensajes(string receptor)
         {
             List<ENMensaje> mensajes = new List<ENMensaje>();
-
+            //Se utiliza conexion Conectada
             SqlConnection c = new SqlConnection(cadenaconexion);
             c.Open();
             string comando = "Select emisor ,mensaje from mensaje where receptor = '" + receptor + "'";
             SqlCommand com = new SqlCommand(comando, c);
             SqlDataAdapter adapter = new SqlDataAdapter(com);
             SqlDataReader dr = com.ExecuteReader();
-
+            
             while (dr.Read())
             {
                 mensajes.Add(new ENMensaje(dr["emisor"].ToString(), dr["mensaje"].ToString()));
@@ -68,12 +70,14 @@ namespace cherryWebClassLibrary
             return mensajes;
         }
 
+        
         public void borrar_mensaje(int id)
         {
             //Código para borrar un mensaje
             string orden = "DELETE FROM MENSAJE WHERE ID = ' " + id + "'";
         }
 
+        //Funcion para filtrar los mensajes por fecha.
         public void mensajePorFecha(DateTime data)
         {
             //Sacar mensajes filtradas por la fecha en la que fueron enviados/recibidos

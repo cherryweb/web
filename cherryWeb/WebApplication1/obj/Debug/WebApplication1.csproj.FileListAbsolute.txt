@@ -42,3 +42,13 @@ C:\Users\Agustin\web\cherryWeb\WebApplication1\obj\Debug\GenerateResource.read.1
 C:\Users\Agustin\web\cherryWeb\WebApplication1\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\Agustin\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Agustin\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\web\cherryWeb\WebApplication1\bin\WebApplication1.dll
+C:\web\cherryWeb\WebApplication1\bin\WebApplication1.pdb
+C:\web\cherryWeb\WebApplication1\bin\cherryWebClassLibrary.dll
+C:\web\cherryWeb\WebApplication1\bin\cherryWebClassLibrary.pdb
+C:\web\cherryWeb\WebApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.Properties.Resources.resources
+C:\web\cherryWeb\WebApplication1\obj\Debug\GenerateResource.read.1.tlog
+C:\web\cherryWeb\WebApplication1\obj\Debug\GenerateResource.write.1.tlog
+C:\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.dll
+C:\web\cherryWeb\WebApplication1\obj\Debug\WebApplication1.pdb

@@ -17,6 +17,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <table style="width:100%;">
+    <tr>
+            <td class="colspan2">
+                <asp:Label ID="NombreError" runat="server" 
+                    Text="El nombre de la aplicacion debe ser igual al nombre del fichero" 
+                    Height= "100%" Width = "250%"></asp:Label>
+            </td>
+        </tr>
         <tr>
             <td class="style1">
                 <asp:Label ID="subirapp_nombrelabel" runat="server" Text="Nombre: "></asp:Label>
@@ -49,6 +56,7 @@
             <td>
                 <asp:Label ID="subirapp_rutaapplabel" runat="server" Text="Ruta App:"></asp:Label>
                 <asp:FileUpload ID="FileUpload2" runat="server" />
+                <asp:Label ID="LabelErrorApp" runat="server" Text=""></asp:Label>
             </td>
         </tr>
         <tr>
@@ -56,6 +64,7 @@
                 <asp:Button ID="subirapp_subirboton" runat="server" Font-Bold="True" 
                     style="text-align: center" Text="SUBIR" 
                     onclick="subirapp_subirboton_Click1" />
+            &nbsp;<asp:Label ID="AplicacionYaExiste" runat="server" Text=""></asp:Label>
             </td>
         </tr>
     </table>

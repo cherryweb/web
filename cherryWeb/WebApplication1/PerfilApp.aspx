@@ -23,7 +23,9 @@
     <table style="width:100%;">
     <tr>
         <td class="style1" rowspan="5">
-            <img alt="" src="" style="height: 89px; width: 97px" /></td>
+            <asp:Image ID="ImagenApp" runat="server" Height="300px" ImageAlign="Right" 
+                Width="300px" />
+        </td>
         <td colspan="3">
             <asp:Label ID="NombreLabel" runat="server" Text="Nombre:"></asp:Label>
             <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>

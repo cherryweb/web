@@ -59,6 +59,8 @@
     <Content Include="App_Data\Database_log.LDF">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <Content Include="CerrarSesion.aspx" />
+    <Content Include="EditarPerfil.aspx" />
     <Content Include="Imagenes\AndroidBG2.jpg" />
     <Content Include="Imagenes\Android.jpg" />
     <Content Include="Imagenes\Android2.jpg" />
@@ -75,7 +77,6 @@
     <Content Include="MiPerfil.aspx" />
     <Content Include="PerfilApp.aspx" />
     <Content Include="PerfilUsuario.aspx" />
-    <Content Include="Prueba.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="Stilo\Stilo.css" />
     <Content Include="Global.asax" />
@@ -127,6 +128,20 @@
     </Compile>
     <Compile Include="Aplicaciones.aspx.designer.cs">
       <DependentUpon>Aplicaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CerrarSesion.aspx.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CerrarSesion.aspx.designer.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarPerfil.aspx.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarPerfil.aspx.designer.cs">
+      <DependentUpon>EditarPerfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="masDescargas.aspx.cs">
       <DependentUpon>masDescargas.aspx</DependentUpon>
@@ -197,13 +212,6 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="Prueba.aspx.cs">
-      <DependentUpon>Prueba.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Prueba.aspx.designer.cs">
-      <DependentUpon>Prueba.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>

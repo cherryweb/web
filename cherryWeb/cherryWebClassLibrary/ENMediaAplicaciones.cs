@@ -11,13 +11,14 @@ namespace cherryWebClassLibrary
         private string aplicacion;
 
         //Datos
-
+        //Constructor
         public ENMediaAplicaciones(float m = 0, string a = "")
         {
             media = m;
             aplicacion = a;
         }
 
+        //Getters y Setters para el calculo de la media de las aplicaciones
         private float Media
         {
             get { return media; }

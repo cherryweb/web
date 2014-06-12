@@ -24,8 +24,8 @@ namespace cherryWebClassLibrary
         {
             // Código para recuperar un tipo DataSet conteniendo los datos del Cliente
             SqlConnection conexion = new SqlConnection(cadenaconexion);//crear conexion esto es la misma            siempre para todos
-            SqlCommand consulta = new SqlCommand("SELECT NOMBRE,DESCRIPCION,CATEGORIA,PVP,USUARIO FROM APLICACIONES WHERE NOMBRE= '" + nombre + "'", conexion);
-            SqlDataAdapter adapter = new SqlDataAdapter(consulta);//obtiene los datos
+            SqlCommand consulta = new SqlCommand("SELECT NOMBRE,DESCRIPCION,CATEGORIA,PVP,IMAGEN,USUARIO FROM APLICACIONES WHERE NOMBRE= '" + nombre + "'", conexion);
+            SqlDataAdapter adapter = new SqlDataAdapter(consulta);//obtiene los datos en modo conectado
             SqlDataReader dr;
 
             conexion.Open();
@@ -41,9 +41,8 @@ namespace cherryWebClassLibrary
                 aux.Categoria = dr["Categoria"].ToString();
                 aux.PVP = (int)dr["PVP"];
                 aux.Usuario = dr["Usuario"].ToString();
+                aux.Imagen = dr["Imagen"].ToString();
                 //aux.Boletin = (bool)dr["boletin"];
-                //aux.Foto = dr["Foto"].ToString();
-            
 
             conexion.Close();
 
@@ -53,14 +52,14 @@ namespace cherryWebClassLibrary
         public bool nueva_aplicacion()
         {
             //Código para crear una nueva aplicacion.
-            //string orden = "INSERT INTO APLICACIONES VALUES('" + aplicacion.Nombre + "', " + aplicacion.Descripcion + "', " + aplicacion + "', " + aplicacion.Peso + "', " + aplicacion.PVP + "', " + aplicacion.Imagen + "')";
 
-            string s = "INSERT INTO APLICACIONES(NOMBRE, DESCRIPCION, CATEGORIA, PVP, USUARIO) Values(@nom, @desc, @cat, @pvp, @usu)";
+            string s = "INSERT INTO APLICACIONES(NOMBRE, DESCRIPCION, CATEGORIA, PVP, IMAGEN, USUARIO) Values(@nom, @desc, @cat, @pvp, @img, @usu)";
             SqlCommand cm = new SqlCommand(s, conexion);
             cm.Parameters.AddWithValue("nom", aplicacion.Nombre);
             cm.Parameters.AddWithValue("desc", aplicacion.Descripcion);
             cm.Parameters.AddWithValue("cat", aplicacion.Categoria);
             cm.Parameters.AddWithValue("pvp", aplicacion.PVP);
+            cm.Parameters.AddWithValue("img", aplicacion.Imagen);
             cm.Parameters.AddWithValue("usu", aplicacion.Usuario);
             //cm.Parameters.AddWithValue("bolet", usuario.Boletin);
             //cm.Parameters.AddWithValue("foto_per", usuario.Foto);

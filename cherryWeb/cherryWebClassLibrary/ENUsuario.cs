@@ -20,7 +20,7 @@ namespace cherryWebClassLibrary
         //Datos
        // private UsuarioCAD m_cc;
 
-        public ENUsuario(string a = "", string n = "", string p = "", string e = "", string ps = "", bool b = false)
+        public ENUsuario(string a = "", string n = "", string p = "", string e = "", string ps = "", bool b = false, string i = "ImagenNoDisp.jpg")
         {
             apodo = a;
             nombre = n;
@@ -28,48 +28,38 @@ namespace cherryWebClassLibrary
             email = e;
             pais = ps;
             boletin = b;
-            //imagen = i;
+            imagen = i;
             //paypal = p;
         }
 
+        //Funcion que llama al CAD para comprobar que los datos introducidos existen
+        static public bool esUsuario(string apodo, string password)
+        {
+           // UsuarioCAD cad = new UsuarioCAD(this);
+            return UsuarioCAD.esUsuario(apodo, password);
+        }
+
+        //Funcion para comprobar si existe un usuario mediante un apodo
+        static public bool existeUsuario(string apodo)
+        {
+            // UsuarioCAD cad = new UsuarioCAD(this);
+            return UsuarioCAD.existeUsuario(apodo);
+        }
+
+        //Funcion que devuelve un usuario
         static public ENUsuario getUsuario(string apodo)
         {
             return UsuarioCAD.dameUsuario(apodo);
         }
 
-        /* public ENUsuario[] getUsuario()
+        //Funcion que llama al CAD para actualizar un usuario
+        public bool actualizaUsuario(ENUsuario usuario)
         {
-            
-        }*/
+            UsuarioCAD cad = new UsuarioCAD(this);
+            return cad.actualizar_usuario(usuario);
+        }
 
-       /* public void nuevo_usuario()
-        {
-            try
-            {
-                m_cc = new UsuarioCAD("../webdb");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error creando usuario");
-
-                return;
-            }
-        }*/
-
-       /* public void borrar_usuario()
-        {
-            try
-            {
-                m_cc = new UsuarioCAD("../webdb");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error borrando usuario");
-
-                return;
-            }
-        }*/
-
+      
         public string Apodo
         {
             get { return apodo; }
@@ -102,7 +92,7 @@ namespace cherryWebClassLibrary
             get { return boletin; }
             set { boletin = value; }
         }
-        public string Foto
+        public string Imagen
         {
             get { return imagen; }
             set { imagen = value; }

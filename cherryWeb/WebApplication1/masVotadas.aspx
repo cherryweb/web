@@ -21,7 +21,7 @@
      </div>
      <div class = "centrado">
      <asp:GridView ID="GridView3"  Width="100%" Height="100%" 
-               AutoGenerateColumns="False"  
+               AutoGenerateColumns="False"  onrowdatabound = "grdAplicaciones_RowDataBound"
               runat="server" DataSourceID="SqlDataSource1">
             <Columns>
             
@@ -30,14 +30,14 @@
                       SortExpression="aplicacion" />
                   <asp:BoundField DataField="valoracion" HeaderText="valoracion" ReadOnly="True" 
                       SortExpression="valoracion" />
+                  
               </Columns>
             </asp:GridView>
-     
-      
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
               ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT        aplicacion, AVG(valoracion) AS valoracion
 FROM            Valoraciones
-GROUP BY aplicacion"></asp:SqlDataSource>
+GROUP BY aplicacion
+ORDER BY valoracion DESC"></asp:SqlDataSource>
      </div>    
 </asp:Content>
 

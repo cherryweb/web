@@ -183,6 +183,13 @@ div.centradoulti
 }
 div.margen
 {
+    font-size: xx-large;
+    height: 40px;
+}
+
+div.margen2
+{
+    font-size: medium;
     height: 40px;
 }
 

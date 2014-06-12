@@ -28,18 +28,56 @@ namespace cherryWebClassLibrary
             this.usuario = usuario;
         }
 
+        //Funcion para comprobar que existe ya un usuario registrado en la base de datos
+        public static bool existeUsuario(string apodo)
+        {
+            bool existe = false;
+            
+            //Se utiliza acceso Conectado a la base de datos
+
+            SqlConnection c = new SqlConnection(cadenaconexion);
+            c.Open();
+            SqlCommand com = new SqlCommand("Select * from usuarios where apodo='" + apodo + "'", c);
+            SqlDataReader dr = com.ExecuteReader();
+
+            existe = dr.HasRows;
+
+            dr.Close();
+            c.Close();
+
+            return existe;
+        }
+
+        //Funcion para comprobar que la informacion introducida es un usuario existente
+        public static bool esUsuario(string apodo, string password)
+        {
+            bool existe = false;
+
+            //Se utiliza acceso Conectado
+            SqlConnection c = new SqlConnection(cadenaconexion);
+            c.Open();
+            SqlCommand com = new SqlCommand("Select * from usuarios where apodo='" + apodo + "' and password='" + password + "'", c);
+            SqlDataReader dr = com.ExecuteReader();
+
+            existe = dr.HasRows;
+
+            dr.Close();
+            c.Close();
+
+            return existe;
+        }
+
+        //Funcion para devolver la informacion de un usuario mediante un apodo
         public static ENUsuario dameUsuario(string apodo)
         {
             // Código para recuperar un tipo DataSet conteniendo los datos del Cliente
             SqlConnection conexion = new SqlConnection(cadenaconexion);//crear conexion esto es la misma            siempre para todos
-            SqlCommand consulta = new SqlCommand("SELECT APODO,NOMBRE,PASSWORD,EMAIL,PAIS,BOLETIN FROM USUARIOS WHERE APODO= '" + apodo + "'", conexion);
+            SqlCommand consulta = new SqlCommand("SELECT APODO,NOMBRE,PASSWORD,EMAIL,PAIS,BOLETIN,FOTOPERFIL FROM USUARIOS WHERE APODO= '" + apodo + "'", conexion);
             SqlDataAdapter adapter = new SqlDataAdapter(consulta);//obtiene los datos
             SqlDataReader dr;
 
             conexion.Open();
 
-            
-  
             ENUsuario aux = new ENUsuario();
 
             dr = consulta.ExecuteReader();
@@ -51,7 +89,7 @@ namespace cherryWebClassLibrary
             aux.Pais = dr["Pais"].ToString();
             aux.Password = dr["Password"].ToString();
             aux.Boletin = (bool)dr["boletin"];
-                //aux.Foto = dr["Foto"].ToString();
+            aux.Imagen = dr["fotoPerfil"].ToString();
             
 
             conexion.Close();
@@ -60,6 +98,7 @@ namespace cherryWebClassLibrary
 
         }
 
+        //Funcion para crear un nuevo usuario y añadirlo a la BD
         public bool nuevo_usuario()
         {
             string s = "INSERT INTO USUARIOS(APODO, NOMBRE, PASSWORD, EMAIL, PAIS, BOLETIN) Values(@apod, @nomb, @pass, @email, @country, @bolet)";
@@ -78,6 +117,7 @@ namespace cherryWebClassLibrary
             return true;
         }
 
+        //Funcion para borrar un usuario de la base de datos
         public bool borrar_usuario()
         {
             //Código para borrar un usuario
@@ -91,6 +131,7 @@ namespace cherryWebClassLibrary
 
             SqlCommand com2 = new SqlCommand(consulta, conexion);
 
+            //Se comprueba que se ha borrado el usuario
             if (com2.ExecuteNonQuery() > 0)
                 aR = true;
 
@@ -99,18 +140,34 @@ namespace cherryWebClassLibrary
             return aR;
         }
 
-        public void actualizar_usuario(ENUsuario usuario)
+        public bool actualizar_usuario(ENUsuario usuario)
         {
             //Código para actualizar un usuario. Por si cambia su e-mail, nombre etc...
+            bool aR = false;
+
+            SqlConnection conexion = new SqlConnection(cadenaconexion);
+            conexion.Open();
+
             string orden = "UPDATE USUARIOS ";
             orden += "set nombre = '" + usuario.Nombre + "', ";
             orden += "password = '" + usuario.Password + "', ";
             orden += "email = '" + usuario.Email + "', ";
-            orden += "pais = '" + usuario.Pais + "', ";
-            orden += "boletin = '" + usuario.Boletin + "', ";
-            orden += "fotoPerfil = '" + usuario.Foto + "', ";
-            orden += "paypal = '" + usuario.Paypal + "', ";
+            orden += "pais = '" + usuario.Pais + "' ";
+            if (usuario.Imagen != "")
+            {
+                orden += ", fotoPerfil = '" + usuario.Imagen + "' ";
+            }
             orden += "where apodo = '" + usuario.Apodo + "'";
+
+            SqlCommand com = new SqlCommand(orden, conexion);
+
+            //Comprobamos que se actualiza el usuario
+            if (com.ExecuteNonQuery() > 0)
+                aR = true;
+
+            conexion.Close();
+
+            return aR;
         }
     }
 }

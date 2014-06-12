@@ -13,8 +13,7 @@ namespace cherryWebClassLibrary
         private string mensaje;
 
         //Datos
-
-        //private MensajeCAD m_cc;
+        //Constructor mensaje enviado
 
         public ENMensaje(string emi, string mens)
         {
@@ -22,6 +21,7 @@ namespace cherryWebClassLibrary
             mensaje = mens;
         }
 
+        //Constructor mensaje
         public ENMensaje(string a1 = "", string a2 = "", string m = "")
         {
             emisor = a1;
@@ -29,46 +29,22 @@ namespace cherryWebClassLibrary
             mensaje = m;
         }
 
-       /* public void nuevo_mensaje()
-        {
-            try
-            {
-                m_cc = new MensajeCAD("../webdb");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error creando usuario");
 
-                return;
-            }
-        }*/
-
+        //Escribir nuevo mensaje
         public bool nuevoMensaje()
         {
             MensajeCAD cad = new MensajeCAD(this);
             return cad.nuevo_mensaje();
         }
 
+        //Obtener lista de mensajes recibidos de cada usuario
         public List<ENMensaje> dameMensajes(string receptor)
         {
             MensajeCAD cad = new MensajeCAD(this);
             return cad.dame_mensajes(receptor);
         }
 
-        /*public void borrar_mensaje()
-        {
-            try
-            {
-                m_cc = new MensajeCAD("../webdb");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error borrando usuario");
-
-                return;
-            }
-        }*/
-
+        //Getetter // Setters
         public int ID
         {
             get { return _ID; }

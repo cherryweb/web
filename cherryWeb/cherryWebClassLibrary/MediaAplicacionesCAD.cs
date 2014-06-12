@@ -13,6 +13,7 @@ namespace cherryWebClassLibrary
 
         }
 
+        //Funcion que calcula la nota media de una aplicacion
         public float CalculoMediaAplicacion(string aplicacion)
         {
             float media = 0;

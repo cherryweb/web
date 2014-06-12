@@ -13,6 +13,15 @@ namespace WebApplication1 {
     public partial class MiPerfil {
         
         /// <summary>
+        /// Control ImagenPerfil.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ImagenPerfil;
+        
+        /// <summary>
         /// Control LApodo.
         /// </summary>
         /// <remarks>
@@ -67,6 +76,24 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label LPais2;
         
         /// <summary>
+        /// Control LTwitter.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LTwitter;
+        
+        /// <summary>
+        /// Control LTwitter2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LTwitter2;
+        
+        /// <summary>
         /// Control LFacebook.
         /// </summary>
         /// <remarks>
@@ -92,5 +119,14 @@ namespace WebApplication1 {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
+        
+        /// <summary>
+        /// Control EditarPerfil.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button EditarPerfil;
     }
 }

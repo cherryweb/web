@@ -16,6 +16,7 @@ namespace cherryWebClassLibrary
 
         DescargasCAD m_cc;
 
+        //Constructor objeto descargas
         public ENDescargas(int nt = 0, string a = "", int v = 0, string u = "")
         {
             numerototal = nt;
@@ -24,19 +25,7 @@ namespace cherryWebClassLibrary
             usuario = u;
         }
 
-        public void nueva_descarga()
-        {
-            try
-            {
-                m_cc = new DescargasCAD("../webdb");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error creando usuario");
-
-                return;
-            }
-        }
+        //Getters // setters
 
         public int Numerototal
         {

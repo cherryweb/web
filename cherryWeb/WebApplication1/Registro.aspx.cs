@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using cherryWebClassLibrary;
+using System.Text.RegularExpressions;
 
 namespace WebApplication1
 {
@@ -14,29 +15,79 @@ namespace WebApplication1
         {
             if (Session["Usuario"] != null)
                 Response.Redirect("inicio.aspx");
-        }
 
+
+            ContrasenaBox.TextMode = TextBoxMode.Password;
+            Contrasena2Box.TextMode = TextBoxMode.Password;
+        }
+        //Confirma el registro del usuario
         protected void Enviar_Click(object sender, EventArgs e)
         {
-            //int d = 0;
-
-            /*if (nuevoApellidos.Text == "" || nuevoDNI.Text == "" || nuevoNombre.Text == "" || nuevoPass.Text == "" || nuevoDNI.Text.Length != 8)
+            //Se hacen diversas comprobaciones antes de guardar el usuario, que ponga campos obligatorios, que no exista ya, que las contraseñas coincidan o que su e-mail sea correcto.
+            if (UsuarioBox.Text != "" && ContrasenaBox.Text != "" && Contrasena2Box.Text != "" && EmailBox.Text != "")
             {
-                PanelError.Visible = true;
+                if (!ENUsuario.existeUsuario(UsuarioBox.Text))
+                {
+                    if (ContrasenaBox.Text == Contrasena2Box.Text)
+                    {
+                        if (IsEmailAllowed(EmailBox.Text))
+                        {
+
+                            ENUsuario nuevo = new ENUsuario(UsuarioBox.Text, NombreBox.Text, ContrasenaBox.Text, EmailBox.Text, DespPaises.Text, BoletinBox.Checked);
+                            Response.Write(nuevo.Apodo + " " + nuevo.Nombre + " " + nuevo.Password + " " + nuevo.Email + " " + nuevo.Pais + " " + nuevo.Boletin);
+                            nuevo.commitDB();
+
+                            if (TwitterBox.Text != "")
+                            {
+                                ENRedesSociales.nueva_red_social(UsuarioBox.Text, "Twitter", TwitterBox.Text);
+                            }
+                            if (FacebookBox.Text != "")
+                            {
+                                ENRedesSociales.nueva_red_social(UsuarioBox.Text, "Facebook", FacebookBox.Text);
+                            }
+
+                            Response.Redirect("inicio.aspx?nuevo=ok");
+                        }
+                        else
+                        {
+                            ErrorEmail.Text = "Se esperaba un correo";
+
+                        }
+                    }
+                    else
+                    {
+
+                        ErrorContrasena.Text = "Las contraseñas no son iguales";
+                    }
+
+                }
+                else
+                {
+                    ErrorApodo.Text = "Este usuario ya existe";
+                }
+
             }
             else
-            {*/
-               /* try
-                {*/
-                    ENUsuario nuevo = new ENUsuario(UsuarioBox.Text, NombreBox.Text, ContrasenaBox.Text, EmailBox.Text, DespPaises.Text, BoletinBox.Checked);
-                    Response.Write(nuevo.Apodo + " " + nuevo.Nombre + " " + nuevo.Password + " " + nuevo.Email + " " + nuevo.Pais + " " + nuevo.Boletin);
-                    nuevo.commitDB();
+            {
+                ErrorLb.Text = "Faltan campos por rellenar";
+            }
 
-                    Response.Redirect("inicio.aspx?nuevo=ok");
-                //}
-                //catch (Exception a) { return false; }
-            //}
 
         }
+
+        //Método que comprueba que un e-mail cumple el formato.
+        private static bool IsEmailAllowed(string text)
+        {
+            bool blnValidEmail = false;
+            Regex regEMail = new Regex(@"^[a-zA-Z][\w\.-]{2,28}[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
+            if (text.Length > 0)
+            {
+            blnValidEmail = regEMail.IsMatch(text);
+            }
+ 
+            return blnValidEmail;
+        }
+
+         
     }
 }

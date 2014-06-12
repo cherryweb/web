@@ -24,3 +24,9 @@ C:\Users\Agustin\web\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLib
 C:\Users\Agustin\web\cherryWeb\cherryWebClassLibrary\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Agustin\web\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLibrary.dll
 C:\Users\Agustin\web\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLibrary.pdb
+C:\web\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.dll.config
+C:\web\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.dll
+C:\web\cherryWeb\cherryWebClassLibrary\bin\Debug\cherryWebClassLibrary.pdb
+C:\web\cherryWeb\cherryWebClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\web\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLibrary.dll
+C:\web\cherryWeb\cherryWebClassLibrary\obj\Debug\cherryWebClassLibrary.pdb

@@ -12,7 +12,7 @@ namespace WebApplication1
     {
 
         protected ENUsuario usuarioActual;
-
+        //Comprueba si el usuario esta logueado y le asigna una página maestra.
         protected override void OnPreInit(EventArgs e)
         {
             if (((ENUsuario)Session["Usuario"]) != null)

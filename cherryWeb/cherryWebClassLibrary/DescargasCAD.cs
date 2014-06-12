@@ -12,6 +12,7 @@ namespace cherryWebClassLibrary
             //Adquiere la cadena de conexión desde un único sitio.
         }
 
+        //Guarda una nueva descargade usuario
         public void nueva_descarga(ENDescargas descarga)
         {
             string orden = "INSERT INTO Descargan VALUES('" + descarga.Usuario + "', " + descarga.Aplicacion + "', " + descarga.Valoracion + "')";

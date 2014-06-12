@@ -19,7 +19,8 @@
     <table style="width:100%;">
     <tr>
         <td class="style1" rowspan="5" >
-            <img alt="" src="Imagenes/chendilon.png" style="height: 240px; width: 200px" /></td>
+            <asp:Image ID="ImagenPerfil" runat="server" Height="300px" Width="300px" />
+        </td>
         <td style="width:50%" colspan="2">
             <asp:Label ID="LApodo" runat="server" Text="<b>Apodo:</b>" ></asp:Label>
             <asp:Label ID="LApodo2" runat="server" Text=""></asp:Label>
@@ -39,6 +40,12 @@
     </tr>
     <tr>
         <td>
+            <asp:Label ID="LTwitter" runat="server" Text="<b>Twitter:</b>"></asp:Label>
+            <asp:Label ID="LTwitter2" runat="server" Text=""></asp:Label>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <asp:Label ID="LFacebook" runat="server" Text="<b>Facebook:</b>"></asp:Label>
             <asp:Label ID="LFacebook2" runat="server" Text=""></asp:Label>
         </td>
@@ -47,6 +54,8 @@
         <td colspan="2">
             <asp:GridView ID="GridView1" runat="server" Height= "100%" Width = "100%">
             </asp:GridView>
+            <asp:Button ID="EditarPerfil" runat="server" Text="Editar perfil" 
+                onclick="EditarPerfil_Click" />
         </td>
     </tr>
 </table>
